@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Samer Allaham &amp; Bayan Alnashoukati · Nikah Davetiyesi · 29 Kasım 2026</title>
+<meta name="description" content="Şam'dan İstanbul'a, yaseminle… Samer Allaham &amp; Bayan Alnashoukati'nin nikah törenine davetlisiniz. 29 Kasım 2026 Pazar, saat 12:00 · Fatih Belediyesi Evlendirme Dairesi, İstanbul.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Samer Allaham &amp; Bayan Alnashoukati · Nikah Davetiyesi">
+<meta property="og:description" content="Şam'dan İstanbul'a, yaseminle… 29 Kasım 2026 Pazar, 12:00 · Fatih Belediyesi Evlendirme Dairesi, İstanbul · سامر اللحام وبيان النشوقاتي">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:url" content="https://mhdsamerallaham.github.io/nikah-davetiye/">
+<meta property="og:image" content="https://mhdsamerallaham.github.io/nikah-davetiye/kapak.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mhdsamerallaham.github.io/nikah-davetiye/kapak.jpg">
+<meta name="theme-color" content="#04100c">
+
+<script>
+/* ==========================================================================
+   ✿  DÜZENLEME ALANI  ✿   Tüm bilgiler ve metinler burada.
+   ========================================================================== */
+const WHATSAPP_NUMBER = "905394611684";   // Ülke koduyla, + ve boşluk olmadan
+
+const CONFIG = {
+  couple: {
+    tr: {
+      brideFirst: "Bayan", brideLast: "Alnashoukati",
+      groomFirst: "Samer", groomLast: "Allaham",
+      bride: "Bayan Alnashoukati",
+      groom: "Samer Allaham",
+      together: "Samer Allaham & Bayan Alnashoukati"
+    },
+    ar: {
+      brideFirst: "بيان", brideLast: "النشوقاتي",
+      groomFirst: "سامر", groomLast: "اللحام",
+      bride: "بيان النشوقاتي",
+      groom: "سامر اللحام",
+      together: "سامر اللحام وبيان النشوقاتي"
+    }
+  },
+  // Geri sayım ve takvim bu tarihi kullanır (İstanbul saati, +03:00)
+  dateISO: "2026-11-29T12:00:00+03:00",
+  durationMinutes: 60,
+  venue: {
+    mapsQuery: "Fatih Belediyesi Evlendirme Dairesi, Hırka-i Şerif, Akşemsettin Cd. No:66, 34091 Fatih/İstanbul"
+  },
+  whatsappNumber: WHATSAPP_NUMBER,
+  defaultLang: "tr",                      // "tr" veya "ar"
+  music: {
+    url: "",                              // Kendi mp3 linkinizi koyarsanız o çalar; boşsa sayfa içi yumuşak bir ud/hicaz melodisi üretilir
+    playOnOpen: false                     // true: "Davetiyeyi aç"a basınca müzik de başlar
+  },
+  calendar: {
+    title: "Samer Allaham & Bayan Alnashoukati Nikahı",
+    fileName: "bayan-samer-nikah.ics"
+  },
+
+  /* Güzel sözler — type: "ayah" (ayet) ya da "saying" (söz) */
+  quotes: [
+    { type: "ayah",
+      ar: "وَمِن كُلِّ شَيْءٍ خَلَقْنَا زَوْجَيْنِ لَعَلَّكُمْ تَذَكَّرُونَ",
+      tr: "Ve her şeyden çift yarattık, belki düşünürsünüz.",
+      refTr: "Zâriyât Sûresi, 49", refAr: "سورة الذاريات، الآية ٤٩" },
+    { type: "ayah",
+      ar: "وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً",
+      tr: "Sizin için kendilerinde huzur bulacağınız eşler yaratması ve aranıza sevgi ve merhamet koyması da O'nun ayetlerindendir.",
+      refTr: "Rûm Sûresi, 21", refAr: "سورة الروم، الآية ٢١" },
+    { type: "saying",
+      ar: "إذا اتّحد القلبان، صارت أبعدُ المدن وطنًا.",
+      tr: "İki gönül bir olunca, en uzak şehir bile yuva olur." },
+    { type: "saying",
+      ar: "أينما تفتّح الياسمين فعطرُه واحد، وكذلك الحبّ.",
+      tr: "Yasemin nerede açarsa açsın, kokusu aynıdır; sevgi de öyle." },
+    { type: "ayah",
+      ar: "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+      tr: "Rabbimiz! Bize eşlerimizden ve nesillerimizden göz aydınlığı olacak kimseler bağışla ve bizi takva sahiplerine önder kıl.",
+      refTr: "Furkân Sûresi, 74", refAr: "سورة الفرقان، الآية ٧٤" },
+    { type: "saying",
+      ar: "حين تلتقي القلوب، تصير المسافات مجرّد حكاية.",
+      tr: "Kalpler bir kez buluştu mu, mesafeler yalnızca bir hikâyedir." }
+  ],
+
+  /* Sayfadaki tüm metinler. {bride} {groom} {couple} otomatik doldurulur. */
+  text: {
+    tr: {
+      pageTitle: "Samer Allaham & Bayan Alnashoukati · Nikah Davetiyesi",
+      introCouple: "{groom} & {bride}",
+      introHint: "Size özel bir davetiye var",
+      openBtn: "Davetiyeyi aç",
+      tagline: "Şam'dan İstanbul'a, yaseminle",
+      heroKicker: "Nikah Töreni",
+      heroDate: "29 Kasım 2026 · Pazar · 12:00",
+      heroPlace: "Fatih Belediyesi Evlendirme Dairesi · İstanbul",
+      scrollCue: "Kaydırın",
+      citiesKicker: "İki şehir, tek yuva",
+      citiesTitle: "Şam'da açan yasemin, İstanbul'da yuva oluyor",
+      citiesText: "Yasemin Şehri'nden yola çıkan bir sevgi, iki kıtanın buluştuğu şehirde ömürlük yuvasını kuruyor.",
+      inviteKicker: "Davetlisiniz",
+      inviteText: "Allah'ın izniyle hayatlarımızı birleştireceğimiz bu mübarek günde, sevincimizi sizinle paylaşmaktan onur duyarız.",
+      dayName: "Pazar", dayNum: "29", monthYear: "Kasım 2026", timeValue: "12:00", timeNote: "Saat",
+      venueLabel: "Mekân",
+      venueName: "Fatih Belediyesi Evlendirme Dairesi",
+      venueAddress: "Hırka-i Şerif, Akşemsettin Cd. No:66, 34091 Fatih / İstanbul",
+      inviteClosing: "Sizleri de aramızda görmek en büyük mutluluğumuz olacaktır.",
+      countdownKicker: "Geri sayım",
+      countdownTitle: "Mutlu güne kalan zaman",
+      cdDays: "Gün", cdHours: "Saat", cdMinutes: "Dakika", cdSeconds: "Saniye",
+      cdShortD: "g", cdShortH: "s", cdShortM: "dk", cdShortS: "sn",
+      cdDone: "Bugün mutlu günümüz",
+      cdDoneSub: "Dualarınızı bekliyoruz",
+      locationKicker: "Konum",
+      locationTitle: "Fatih Belediyesi Evlendirme Dairesi",
+      directions: "Yol tarifi al",
+      navDirections: "Yol tarifi",
+      openMap: "Haritada aç",
+      calendarTitle: "Takviminize ekleyin",
+      calendarText: "Unutmamanız için tek dokunuşla takviminize ekleyebilirsiniz.",
+      addCalendar: "Takvime ekle",
+      googleCalendar: "Google Takvim'e ekle",
+      rsvpKicker: "Katılım",
+      rsvpTitle: "Bizimle olacak mısınız?",
+      rsvpText: "Hazırlıklarımız için katılım durumunuzu bildirirseniz çok seviniriz.",
+      rsvpYes: "Geleceğim",
+      rsvpNo: "Gelemeyeceğim",
+      formTitleYes: "Harika! Sizi bekliyoruz",
+      formTitleNo: "Sizi özleyeceğiz",
+      formName: "Ad Soyad",
+      formNamePh: "Adınız ve soyadınız",
+      formCount: "Kişi sayısı",
+      formNote: "Notunuz (isteğe bağlı)",
+      formNotePh: "Çifte iyi dilekleriniz…",
+      formSend: "WhatsApp ile gönder",
+      formCancel: "Vazgeç",
+      formErr: "Lütfen adınızı ve soyadınızı yazın.",
+      waYes: "Merhaba! {couple} nikahına katılacağım 🌼\nAd Soyad: {name}\nKişi sayısı: {count}\nNot: {note}",
+      waNo: "Merhaba! Maalesef {couple} nikahına katılamayacağım. Şimdiden mutluluklar dilerim 🌼\nAd Soyad: {name}\nNot: {note}",
+      takiLabel: "Bilgilendirme",
+      takiNote: "Nikahımızda takı töreni yapılmayacaktır. Değerli varlığınız ve dualarınız bizim için en kıymetli hediyedir.",
+      closingKicker: "Teşekkürler",
+      closingThanks: "Bu güzel günümüzü bizimle paylaştığınız için gönülden teşekkür ederiz.",
+      closingPrayer: "Dualarınızla…",
+      duaMeaning: "“Allah size bereket versin, üzerinize bereket indirsin ve sizi hayırda bir araya getirsin.”",
+      footer: "29 · 11 · 2026 · İstanbul",
+      calDescription: "Samer Allaham & Bayan Alnashoukati'ın nikah töreni. Dualarınızla…",
+      musicOn: "Müziği aç", musicOff: "Müziği kapat"
+    },
+    ar: {
+      pageTitle: "دعوة عقد قران سامر اللحام وبيان النشوقاتي",
+      introCouple: "{groom} و{bride}",
+      introHint: "لديكم دعوة خاصة",
+      openBtn: "افتح الدعوة",
+      tagline: "من الشام إلى إسطنبول، مع الياسمين",
+      heroKicker: "حفل عقد القران",
+      heroDate: "الأحد · ٢٩ تشرين الثاني ٢٠٢٦ · الساعة ١٢:٠٠ ظهرًا",
+      heroPlace: "دائرة عقود الزواج - بلدية الفاتح · إسطنبول",
+      scrollCue: "مرّروا للأسفل",
+      citiesKicker: "مدينتان، وبيتٌ واحد",
+      citiesTitle: "ياسمينٌ تفتّح في الشام، ليزهر بيتًا في إسطنبول",
+      citiesText: "حبٌّ انطلق من مدينة الياسمين، ليبني عشّه الأبديّ في المدينة التي تلتقي فيها القارّتان.",
+      inviteKicker: "يسعدنا حضوركم",
+      inviteText: "بكل الحب، نتشرّف بدعوتكم لمشاركتنا فرحة عقد قراننا على سنّة الله ورسوله، في هذا اليوم المبارك.",
+      dayName: "الأحد", dayNum: "٢٩", monthYear: "تشرين الثاني ٢٠٢٦", timeValue: "١٢:٠٠", timeNote: "ظهرًا",
+      venueLabel: "المكان",
+      venueName: "دائرة عقود الزواج - بلدية الفاتح",
+      venueAddress: "خرقة شريف، شارع آق شمس الدين، رقم ٦٦، ٣٤٠٩١ الفاتح / إسطنبول",
+      inviteClosing: "وجودكم بيننا يكمّل فرحتنا.",
+      countdownKicker: "العدّ التنازلي",
+      countdownTitle: "الوقت المتبقّي على يوم الفرح",
+      cdDays: "يوم", cdHours: "ساعة", cdMinutes: "دقيقة", cdSeconds: "ثانية",
+      cdShortD: "ي", cdShortH: "س", cdShortM: "د", cdShortS: "ث",
+      cdDone: "اليوم يوم فرحتنا",
+      cdDoneSub: "لا تنسونا من صالح دعائكم",
+      locationKicker: "الموقع",
+      locationTitle: "دائرة عقود الزواج - بلدية الفاتح",
+      directions: "احصل على الاتجاهات",
+      navDirections: "الاتجاهات",
+      openMap: "افتح الخريطة",
+      calendarTitle: "أضيفوا الموعد إلى التقويم",
+      calendarText: "حتى لا يفوتكم الموعد، أضيفوه إلى تقويمكم بلمسة واحدة.",
+      addCalendar: "أضف إلى التقويم",
+      googleCalendar: "أضف إلى تقويم Google",
+      rsvpKicker: "تأكيد الحضور",
+      rsvpTitle: "هل ستشاركوننا فرحتنا؟",
+      rsvpText: "يسعدنا أن تُعلمونا بحضوركم لنُتمّ تحضيراتنا.",
+      rsvpYes: "سأحضر بإذن الله",
+      rsvpNo: "أعتذر عن الحضور",
+      formTitleYes: "بانتظاركم بكل حب",
+      formTitleNo: "سنفتقد حضوركم",
+      formName: "الاسم الكامل",
+      formNamePh: "اكتبوا اسمكم الكامل",
+      formCount: "عدد الأشخاص",
+      formNote: "رسالتكم (اختياري)",
+      formNotePh: "تمنياتكم للعروسين…",
+      formSend: "إرسال عبر واتساب",
+      formCancel: "إلغاء",
+      formErr: "يرجى كتابة الاسم الكامل.",
+      waYes: "السلام عليكم، سأحضر بإذن الله عقد قران {couple} 🌼\nالاسم: {name}\nعدد الأشخاص: {count}\nملاحظة: {note}",
+      waNo: "السلام عليكم، أعتذر عن حضور عقد قران {couple}، مع أطيب التمنيات بالسعادة 🌼\nالاسم: {name}\nملاحظة: {note}",
+      takiLabel: "ملاحظة",
+      takiNote: "لن يكون هناك مراسم لتقديم الهدايا الذهبية (تاكي) في عقد القران؛ فحضوركم الكريم ودعواتكم الصادقة هي أجمل هدية لنا.",
+      closingKicker: "شكرًا لكم",
+      closingThanks: "نشكركم من القلب على مشاركتنا هذا اليوم الجميل، فحضوركم يزيده بهجة.",
+      closingPrayer: "بدعواتكم…",
+      duaMeaning: "",
+      footer: "٢٩ · ١١ · ٢٠٢٦ · إسطنبول",
+      calDescription: "عقد قران سامر اللحام وبيان النشوقاتي. بدعواتكم…",
+      musicOn: "تشغيل الموسيقى", musicOff: "إيقاف الموسيقى"
+    }
+  }
+};
+/* ======================= Düzenleme alanı sonu ======================= */
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#04100c; --ink-2:#071812; --ink-3:#0b261d;
+  --emerald:#0e4a37; --emerald-2:#17694f; --emerald-3:#2a8a68;
+  --gold:#c9a45c; --gold-l:#f3dca0; --gold-d:#8c6a2e;
+  --cream:#f6efdf; --jasmine:#fffcf3; --text:#ece3cf; --muted:#ada58f;
+  --gold-grad:linear-gradient(100deg,#8c6a2e 0%,#d9b86c 20%,#f7e5ad 40%,#c9a45c 58%,#f3dca0 78%,#9c7a38 100%);
+  --serif:'Cormorant Garamond','Times New Roman',serif;
+  --sans:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ar:'Amiri','Times New Roman',serif;
+  --ar-ui:'Reem Kufi','Amiri',sans-serif;
+  --body:var(--sans); --display:var(--serif); --ui:var(--sans);
+  --brocade:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23c9a45c' stroke-opacity='.075' stroke-width='1'%3E%3Cpath d='M42 10C50 22 50 32 42 42C34 32 34 22 42 10ZM42 74C50 62 50 52 42 42C34 52 34 62 42 74ZM10 42C22 34 32 34 42 42C32 50 22 50 10 42ZM74 42C62 34 52 34 42 42C52 50 62 50 74 42Z'/%3E%3Ccircle cx='42' cy='42' r='3'/%3E%3Cpath d='M0 0L12 12M84 0L72 12M0 84L12 72M84 84L72 72'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3Ccircle cx='84' cy='0' r='5'/%3E%3Ccircle cx='0' cy='84' r='5'/%3E%3Ccircle cx='84' cy='84' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  --brocade-card:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='84' height='84' viewBox='0 0 84 84'%3E%3Cg fill='none' stroke='%23b08a43' stroke-opacity='.13' stroke-width='1'%3E%3Cpath d='M42 10C50 22 50 32 42 42C34 32 34 22 42 10ZM42 74C50 62 50 52 42 42C34 52 34 62 42 74ZM10 42C22 34 32 34 42 42C32 50 22 50 10 42ZM74 42C62 34 52 34 42 42C52 50 62 50 74 42Z'/%3E%3Ccircle cx='42' cy='42' r='3'/%3E%3Ccircle cx='0' cy='0' r='5'/%3E%3Ccircle cx='84' cy='0' r='5'/%3E%3Ccircle cx='0' cy='84' r='5'/%3E%3Ccircle cx='84' cy='84' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  --noise:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .95 0 0 0 0 .85 0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+html[dir="rtl"]{ --body:var(--ar); --display:var(--ar); --ui:var(--ar-ui); }
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;background:var(--ink);scroll-behavior:smooth}
+body{
+  font-family:var(--body);font-weight:300;color:var(--text);line-height:1.65;
+  background:
+    radial-gradient(90% 50% at 50% 0%, rgba(23,105,79,.22), transparent 70%),
+    var(--brocade),
+    var(--ink);
+  overflow-x:hidden;min-height:100vh;
+  -webkit-tap-highlight-color:transparent;
+}
+html[dir="rtl"] body{font-size:1.06rem;font-weight:400}
+body::before{content:"";position:fixed;inset:0;background-image:var(--noise);pointer-events:none;z-index:1;opacity:.9}
+body.locked{overflow:hidden;height:100vh}
+img,svg{display:block}
+button{font:inherit;color:inherit}
+a{color:inherit}
+
+/* ---------- shared ---------- */
+.gold-text{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.kicker{font-family:var(--ui);font-weight:400;font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold)}
+html[dir="rtl"] .kicker{letter-spacing:0;text-transform:none;font-size:.98rem}
+.title{font-family:var(--display);font-weight:500;font-size:clamp(1.85rem,6.8vw,2.9rem);line-height:1.2;margin-top:.5rem}
+html[dir="rtl"] .title{font-weight:700;line-height:1.5}
+.lead{color:var(--muted);max-width:34rem;margin:.9rem auto 0;font-size:1rem}
+.gold-line{height:1px;width:min(260px,60%);margin:22px auto;background:linear-gradient(90deg,transparent,var(--gold-d),var(--gold-l),var(--gold-d),transparent)}
+.divider{width:min(240px,64%);height:auto;margin:26px auto;overflow:visible}
+.ar-font{font-family:var(--ar)}
+main{
+  position:relative;z-index:2;
+  transform-origin:50% 35vh;
+  transition:transform 1.8s cubic-bezier(.22,.68,.2,1),filter 1.6s ease
+}
+/* Invitation sits gently recessed behind the closed door, then glides closer as you walk through */
+body.locked main{transform:scale(.86);filter:brightness(.72)}
+body.walking main{transform:scale(1);filter:brightness(1)}
+body.opened main{transform:none;filter:none}
+
+.section{position:relative;max-width:780px;margin:0 auto;padding:clamp(64px,11vh,114px) 22px;text-align:center}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity 1.1s ease,transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--ui);font-weight:500;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;
+  padding:15px 28px;border-radius:999px;cursor:pointer;text-decoration:none;
+  color:#1d1406;background:var(--gold-grad);background-size:180% 100%;
+  border:1px solid rgba(247,229,173,.7);
+  box-shadow:0 10px 30px -12px rgba(201,164,92,.7),inset 0 1px 0 rgba(255,255,255,.45);
+  transition:transform .25s ease,background-position .8s ease,box-shadow .3s;
+  position:relative;overflow:hidden;min-height:50px
+}
+.btn:hover{background-position:100% 0}
+.btn:active{transform:scale(.97)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-ghost{background:rgba(6,24,18,.55);color:var(--gold-l);border:1px solid rgba(201,164,92,.55);box-shadow:none}
+.btn-ghost:hover{background:rgba(14,74,55,.5)}
+html[dir="rtl"] .btn{letter-spacing:0;text-transform:none;font-size:1rem}
+.btn-row{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}
+.text-link{display:inline-block;margin-top:16px;color:var(--gold);font-family:var(--ui);font-size:.85rem;text-decoration:none;border-bottom:1px solid rgba(201,164,92,.4);padding-bottom:2px}
+
+/* ---------- fixed top nav (countdown + directions + music + lang) ---------- */
+.top-nav{
+  position:fixed;top:0;left:0;right:0;z-index:160;
+  display:flex;align-items:center;justify-content:space-between;gap:6px;
+  padding:calc(8px + env(safe-area-inset-top)) 10px 8px;
+  background:rgba(4,16,12,.84);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(201,164,92,.28);
+  box-shadow:0 8px 28px -12px rgba(0,0,0,.75);
+  transform:translateY(-110%);opacity:0;pointer-events:none;
+  transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .6s ease
+}
+body.opened .top-nav{transform:none;opacity:1;pointer-events:auto}
+.nav-left{display:flex;align-items:center;gap:6px;min-width:0;flex:1 1 auto}
+.nav-cd{
+  display:inline-flex;align-items:center;gap:5px;text-decoration:none;
+  color:var(--gold-l);font-family:var(--serif);font-size:.98rem;line-height:1;
+  padding:6px 9px 6px 7px;border-radius:999px;
+  background:rgba(14,74,55,.32);border:1px solid rgba(201,164,92,.32);
+  white-space:nowrap;min-width:0;overflow:hidden;text-overflow:ellipsis
+}
+.nav-cd svg{width:15px;height:15px;flex:none}
+.nav-cd .cd-val{font-variant-numeric:tabular-nums;letter-spacing:.01em;font-weight:500}
+.nav-cd .cd-sep{color:var(--gold-d);margin:0 1px;opacity:.75}
+.nav-cd small{font-family:var(--ui);font-size:.64rem;color:var(--muted);margin-inline-start:1px;letter-spacing:0}
+html[dir="rtl"] .nav-cd{font-family:var(--ar);font-size:1rem}
+html[dir="rtl"] .nav-cd small{font-size:.74rem}
+
+.nav-dir{
+  display:inline-flex;align-items:center;gap:4px;text-decoration:none;flex:none;
+  height:34px;padding:0 10px;border-radius:999px;
+  font-family:var(--ui);font-size:.72rem;font-weight:500;letter-spacing:.06em;
+  color:#1d1406;background:var(--gold-grad);border:1px solid rgba(247,229,173,.65);
+  box-shadow:0 4px 14px -6px rgba(201,164,92,.7);white-space:nowrap;
+  transition:transform .2s
+}
+.nav-dir:active{transform:scale(.94)}
+.nav-dir svg{width:14px;height:14px;flex:none}
+html[dir="rtl"] .nav-dir{letter-spacing:0;font-size:.82rem}
+
+.nav-actions{display:flex;align-items:center;gap:6px;flex:none}
+.nav-btn{
+  position:relative;display:inline-grid;place-items:center;cursor:pointer;
+  color:var(--gold-l);background:rgba(6,24,18,.78);
+  border:1px solid rgba(201,164,92,.45);transition:transform .25s,background .25s
+}
+.nav-btn:active{transform:scale(.93)}
+.nav-music{width:34px;height:34px;border-radius:50%}
+.nav-music svg{width:20px;height:20px;transition:transform .6s}
+.nav-music .slash{transition:opacity .3s}
+.nav-music.on .slash{opacity:0}
+.nav-music.on svg.flower{animation:spin 14s linear infinite}
+.nav-music::after{content:"";position:absolute;inset:-4px;border-radius:50%;border:1px solid rgba(201,164,92,.5);opacity:0}
+.nav-music.on::after{animation:pulse 2.4s ease-out infinite}
+.nav-lang{height:34px;padding:0 10px;border-radius:999px;font-size:.8rem}
+.nav-lang .ar{font-family:var(--ar-ui)}
+@media (max-width:400px){
+  .nav-cd{font-size:.86rem;padding:5px 7px 5px 6px}
+  .nav-cd svg{display:none}
+  .nav-dir{padding:0 8px;font-size:.68rem}
+  .nav-lang{padding:0 8px;font-size:.76rem}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(1.45)}}
+
+/* ---------- fixed bottom RSVP bar ---------- */
+.rsvp-bar{
+  position:fixed;bottom:0;left:0;right:0;z-index:160;
+  display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+  background:rgba(4,16,12,.88);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-top:1px solid rgba(201,164,92,.36);
+  box-shadow:0 -12px 36px -8px rgba(0,0,0,.78);
+  transform:translateY(115%);opacity:0;pointer-events:none;
+  transition:transform .85s cubic-bezier(.2,.8,.2,1) .15s,opacity .6s ease .15s
+}
+body.opened .rsvp-bar{transform:none;opacity:1;pointer-events:auto}
+.rsvp-bar-q{
+  font-family:var(--display);font-size:1.05rem;font-weight:500;color:var(--gold-l);
+  margin-inline-end:4px;white-space:nowrap
+}
+html[dir="rtl"] .rsvp-bar-q{font-size:1.12rem;font-weight:700}
+.rsvp-bar-btns{display:flex;align-items:center;gap:8px;flex:0 1 auto}
+.rsvp-bar .btn{min-height:38px;padding:8px 16px;font-size:.74rem;letter-spacing:.12em;box-shadow:0 6px 18px -8px rgba(201,164,92,.65)}
+html[dir="rtl"] .rsvp-bar .btn{font-size:.9rem;letter-spacing:0;padding:7px 14px}
+@media (max-width:440px){
+  .rsvp-bar{flex-direction:column;gap:7px;padding-top:8px}
+  .rsvp-bar-q{font-size:.98rem;margin:0}
+  .rsvp-bar-btns{width:100%;justify-content:center}
+  .rsvp-bar .btn{flex:1;max-width:170px}
+}
+
+#petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:40;opacity:0;transition:opacity 2s ease}
+body.opened #petals{opacity:1}
+
+/* ---------- INTRO (REAL WALK-THROUGH PORTAL DOOR) ---------- */
+.intro{
+  position:fixed;inset:0;z-index:200;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:clamp(10px,2.2vh,20px);
+  padding:calc(16px + env(safe-area-inset-top)) 18px calc(16px + env(safe-area-inset-bottom));
+  overflow:hidden;
+  transition:opacity .75s ease,visibility .75s
+}
+.intro.done{opacity:0;visibility:hidden;pointer-events:none}
+
+.intro-ui{
+  position:relative;z-index:5;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;
+  transition:opacity .65s ease,transform .8s cubic-bezier(.3,0,.2,1)
+}
+.intro.opening .intro-ui-top{opacity:0;transform:translateY(-24px);pointer-events:none}
+.intro.opening .intro-ui-bot{opacity:0;transform:translateY(24px);pointer-events:none}
+.lang-pick{display:flex;gap:4px;padding:4px;border:1px solid rgba(201,164,92,.35);border-radius:999px;background:rgba(0,0,0,.35)}
+.lang-pick button{background:none;border:0;cursor:pointer;color:var(--muted);font-family:var(--sans);font-size:.85rem;padding:7px 16px;border-radius:999px;transition:background .3s,color .3s}
+.lang-pick button.ar{font-family:var(--ar-ui);font-size:.95rem}
+.lang-pick button[aria-pressed="true"]{background:var(--gold-grad);color:#1d1406}
+.intro-couple{font-family:var(--serif);font-size:clamp(1.2rem,4.8vw,1.75rem);font-weight:500;letter-spacing:.03em;margin-top:4px;line-height:1.25}
+html[dir="rtl"] .intro-couple{font-family:var(--ar);font-weight:700;letter-spacing:0;font-size:clamp(1.35rem,5.4vw,1.9rem)}
+.intro-hint{font-family:var(--ui);color:var(--muted);font-size:.88rem;letter-spacing:.08em}
+html[dir="rtl"] .intro-hint{letter-spacing:0}
+
+/* The portal stage: contains the full-screen cutout wall + arch + 3D doors.
+   When .walking is added, this entire stage scales up smoothly so the camera walks THROUGH the open doorway into the real page behind! */
+.door-scene{
+  position:relative;z-index:3;
+  width:min(68vw,284px,calc(50vh * .706));
+  width:min(68vw,284px,calc(50svh * .706));
+  aspect-ratio:240/340;
+  transform-origin:50% 56%;
+  cursor:pointer;
+  will-change:transform,opacity;
+  transition:transform 1.85s cubic-bezier(.42,0,.18,1),opacity .8s ease 1.15s
+}
+.intro.walking .door-scene{
+  transform:scale(5.4);
+  opacity:0;
+  pointer-events:none
+}
+
+/* Huge surrounding wall with a REAL transparent pointed-arch cutout in the center */
+.wall-cutout{
+  position:absolute;left:50%;top:50%;
+  width:2400px;height:2400px;
+  transform:translate(-50%,-50%);
+  pointer-events:none;z-index:1;
+  overflow:visible
+}
+
+/* Subtle warm rim glow inside the arch threshold as the doors open */
+.door-threshold-glow{
+  position:absolute;left:16.667%;top:11.765%;width:66.667%;height:88.235%;
+  pointer-events:none;z-index:2;opacity:0;
+  box-shadow:inset 0 0 32px rgba(247,225,156,.55), 0 0 40px rgba(243,216,142,.35);
+  border-radius:50% 50% 0 0 / 34% 34% 0 0;
+  transition:opacity 1s ease .15s
+}
+.intro.opening .door-threshold-glow{opacity:1}
+
+/* 3D swinging wooden door leaves (cover the transparent arch until opened) */
+.leaves{
+  position:absolute;left:16.667%;top:11.765%;width:66.667%;height:88.235%;
+  display:flex;perspective:1100px;transform-style:preserve-3d;z-index:3
+}
+.leaf{
+  width:50%;height:100%;
+  transition:transform 1.35s cubic-bezier(.38,.05,.22,1),filter 1.2s ease;
+  will-change:transform;backface-visibility:hidden
+}
+.leaf svg{width:100%;height:100%}
+.leaf-l{transform-origin:0 50%}
+.leaf-r{transform-origin:100% 50%}
+.leaf-r svg{transform:scaleX(-1)}
+.intro.opening .leaf-l{transform:rotateY(108deg);filter:brightness(.68)}
+.intro.opening .leaf-r{transform:rotateY(-108deg);filter:brightness(.68)}
+
+/* Ablaq stone arch frame + jasmine vines sitting in front of the cutout edge */
+.door-layer{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:4}
+.door-scene .vine use{transform-box:fill-box;transform-origin:center;animation:breathe 5s ease-in-out infinite}
+@keyframes breathe{50%{transform:scale(1.08)}}
+
+.btn-open{animation:floaty 3.2s ease-in-out infinite}
+.btn-open::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:gleam 3.6s ease-in-out infinite}
+@keyframes gleam{0%,55%{left:-60%}100%{left:130%}}
+@keyframes floaty{50%{transform:translateY(-3px)}}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:calc(68px + env(safe-area-inset-top)) 18px calc(108px + env(safe-area-inset-bottom));text-align:center}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 45% at 50% 38%,rgba(201,164,92,.14),transparent 70%);pointer-events:none}
+.arch-window{position:relative;width:min(68vw,310px,calc(40vh * .75));width:min(68vw,310px,calc(40svh * .75));aspect-ratio:300/400;opacity:1}
+.arch-window svg{width:100%;height:100%;overflow:visible}
+.jet{stroke-dasharray:3 5;animation:flow .9s linear infinite}
+.jet.b{animation-duration:1.1s}
+@keyframes flow{to{stroke-dashoffset:-16}}
+.ripple{transform-box:fill-box;transform-origin:center;animation:ripple 3.2s ease-out infinite;opacity:0}
+.ripple.r2{animation-delay:1.6s}
+@keyframes ripple{0%{opacity:.7;transform:scale(.4)}100%{opacity:0;transform:scale(2.6)}}
+.twinkle{animation:twinkle 3s ease-in-out infinite}
+.twinkle:nth-child(2n){animation-delay:1.2s}.twinkle:nth-child(3n){animation-delay:2.1s}
+@keyframes twinkle{50%{opacity:.2}}
+.flicker{animation:flicker 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes flicker{0%,100%{opacity:.85;transform:scale(1)}40%{opacity:1;transform:scale(1.08)}70%{opacity:.75;transform:scale(.96)}}
+
+.branch{width:min(86vw,400px);margin-top:-6px;overflow:visible}
+.stem{stroke-dasharray:1;stroke-dashoffset:1}
+.hero.play .stem{animation:draw 2s cubic-bezier(.45,.1,.3,1) .15s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.bl{transform:scale(0);transform-box:fill-box;transform-origin:0 50%}
+.hero.play .bl{animation:grow .8s cubic-bezier(.3,1.4,.5,1) var(--d,.7s) forwards}
+@keyframes grow{to{transform:scale(1)}}
+.bf{opacity:0;transform:scale(0) rotate(-70deg);transform-box:fill-box;transform-origin:center}
+.hero.play .bf{animation:bloom 1.1s cubic-bezier(.3,1.3,.5,1) var(--d,1.4s) forwards}
+@keyframes bloom{60%{opacity:1;transform:scale(1.15) rotate(8deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
+
+.names{
+  font-family:var(--serif);font-weight:500;
+  font-size:clamp(2.1rem,9.2vw,3.8rem);line-height:1.12;margin-top:4px;
+  filter:drop-shadow(0 0 22px rgba(201,164,92,.28));
+  display:flex;flex-direction:column;align-items:center;gap:2px
+}
+.names .name-line{display:inline-flex;flex-wrap:wrap;justify-content:center;align-items:baseline;gap:.24em}
+.names .surname{font-size:.76em;font-weight:400;letter-spacing:.03em}
+.names .ch,.names .amp{display:inline-block;padding:.03em .01em;
+  background:linear-gradient(180deg,#fff4cf 0%,#ecd08e 42%,#b88f42 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+  opacity:0;transform:translateY(.28em)}
+.names .amp{font-style:italic;font-weight:400;font-size:.66em;line-height:.85;margin:.04em 0}
+.hero.play .names .ch,.hero.play .names .amp{animation:letter .85s cubic-bezier(.2,.7,.2,1) calc(1.2s + var(--i) * 36ms) forwards}
+@keyframes letter{to{opacity:1;transform:none}}
+.names-ar{font-family:var(--ar);font-weight:700;font-size:clamp(1.35rem,5.8vw,2.15rem);line-height:1.6;color:var(--gold-l);opacity:0;margin-top:6px}
+.hero-meta{opacity:0;margin-top:8px}
+.hero-meta .kicker{display:block}
+.hero-meta .date{font-family:var(--display);font-size:clamp(1.05rem,4.4vw,1.35rem);color:var(--cream);margin-top:6px}
+html[dir="rtl"] .hero-meta .date{font-size:clamp(1.05rem,4.6vw,1.3rem)}
+.hero-meta .place{color:var(--muted);font-size:.9rem;margin-top:2px}
+.hero.play .names-ar{animation:fadeUp 1.2s ease 2.2s forwards}
+.hero.play .hero-meta{animation:fadeUp 1.2s ease 2.6s forwards}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.scroll-cue{position:absolute;bottom:calc(82px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;
+  font-family:var(--ui);font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);opacity:0}
+html[dir="rtl"] .scroll-cue{letter-spacing:0;font-size:.85rem}
+.scroll-cue i{display:block;width:1px;height:28px;background:linear-gradient(var(--gold),transparent);animation:cue 2.2s ease-in-out infinite;transform-origin:top}
+.hero.play .scroll-cue{animation:fadeIn 1s ease 3.2s forwards}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(1);opacity:0}}
+@keyframes fadeIn{to{opacity:1}}
+
+/* ---------- INVITATION CARD ---------- */
+.card{position:relative;max-width:520px;margin:0 auto;padding:clamp(70px,16vw,96px) clamp(22px,6vw,44px) 52px;color:#1a3a2d;
+  background:var(--brocade-card),radial-gradient(120% 80% at 50% 0%,#fffdf6,#f3ead6 70%,#eadfc4);
+  border-radius:50% 50% 14px 14px / 160px 160px 14px 14px;
+  box-shadow:0 40px 90px -35px rgba(0,0,0,.9),0 0 0 1px rgba(201,164,92,.6),inset 0 0 0 9px rgba(255,252,243,.55),inset 0 0 0 10px rgba(176,138,67,.55),inset 0 0 0 14px rgba(255,252,243,0),inset 0 0 0 15px rgba(176,138,67,.25)}
+.card .medallion{position:absolute;top:26px;left:50%;transform:translateX(-50%);width:44px;height:44px}
+.card .corner{position:absolute;width:42px;height:42px;bottom:20px}
+.card .corner.l{left:20px;transform:scaleY(-1)}
+.card .corner.r{right:20px;transform:scale(-1,-1)}
+.card .kicker{color:var(--gold-d)}
+.card-couple{font-family:var(--serif);font-weight:500;font-size:clamp(1.65rem,7.2vw,2.35rem);line-height:1.2;margin-top:10px;color:#0e4a37}
+.card-couple .c-amp{display:block;font-style:italic;font-size:.75em;color:#8c6a2e;margin:2px 0}
+.card-couple small{display:block;font-family:var(--ar);font-weight:700;font-size:.66em;line-height:1.75;color:#8c6a2e;margin-top:6px}
+.card-text{font-size:1rem;color:#3c5248;margin-top:14px;line-height:1.75}
+html[dir="rtl"] .card-text{font-size:1.12rem}
+.date-grid{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;margin:26px 0 8px}
+.date-side{border-top:1px solid rgba(176,138,67,.8);border-bottom:1px solid rgba(176,138,67,.8);padding:9px 0;font-family:var(--ui);font-weight:500;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;color:#0e4a37}
+html[dir="rtl"] .date-side{letter-spacing:0;font-size:1rem}
+.date-side small{display:block;font-weight:400;font-size:.68rem;color:#8c6a2e;letter-spacing:.2em}
+html[dir="rtl"] .date-side small{letter-spacing:0;font-size:.85rem}
+.date-num{font-family:var(--serif);font-weight:500;font-size:4.4rem;line-height:1;background:linear-gradient(180deg,#1d6b51,#0b3a2b);-webkit-background-clip:text;background-clip:text;color:transparent}
+html[dir="rtl"] .date-num{font-family:var(--ar);font-weight:700;line-height:1.3}
+.month{font-family:var(--display);font-size:1.25rem;color:#8c6a2e;letter-spacing:.08em}
+html[dir="rtl"] .month{letter-spacing:0}
+.venue-label{margin-top:4px}
+.venue-name{font-family:var(--display);font-size:1.5rem;font-weight:600;color:#0e4a37;margin-top:4px;line-height:1.3}
+.venue-addr{color:#3c5248;font-size:.95rem;margin-top:4px}
+.card .divider{margin:22px auto}
+.card-closing{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:#5b6b5f}
+html[dir="rtl"] .card-closing{font-family:var(--ar);font-style:normal}
+
+/* ---------- COUNTDOWN ---------- */
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(8px,2.5vw,16px);max-width:470px;margin:30px auto 0}
+.cd-box{position:relative;aspect-ratio:100/130;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:22%}
+.cd-box>svg{position:absolute;inset:0;width:100%;height:100%}
+.cd-num{position:relative;font-family:var(--serif);font-weight:500;font-size:clamp(1.7rem,8.4vw,2.7rem);line-height:1;color:var(--gold-l);font-variant-numeric:tabular-nums}
+html[dir="rtl"] .cd-num{font-family:var(--ar)}
+.cd-num.tick{animation:tick .5s ease}
+@keyframes tick{0%{opacity:.3;transform:translateY(-6px)}100%{opacity:1;transform:none}}
+.cd-lbl{position:relative;font-family:var(--ui);font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+html[dir="rtl"] .cd-lbl{letter-spacing:0;font-size:.85rem}
+.cd-done{display:none;margin-top:28px}
+.cd-done p:first-child{font-family:var(--display);font-size:clamp(1.8rem,7vw,2.6rem)}
+.countdown.done .cd{display:none}
+.countdown.done .cd-done{display:block}
+
+/* ---------- LOCATION ---------- */
+.map-card{display:block;position:relative;max-width:520px;margin:28px auto 0;border-radius:22px;overflow:hidden;border:1px solid rgba(201,164,92,.45);
+  box-shadow:0 30px 60px -30px rgba(0,0,0,.9);text-decoration:none;transition:transform .4s}
+.map-card:active{transform:scale(.985)}
+.map-card svg{width:100%;height:auto}
+.map-card .map-cta{position:absolute;right:12px;bottom:12px;font-family:var(--ui);font-size:.75rem;letter-spacing:.12em;color:var(--gold-l);background:rgba(4,16,12,.8);border:1px solid rgba(201,164,92,.5);padding:6px 12px;border-radius:999px}
+html[dir="rtl"] .map-card .map-cta{right:auto;left:12px;letter-spacing:0;font-size:.9rem}
+.pin-pulse{transform-box:fill-box;transform-origin:center;animation:pinpulse 2.4s ease-out infinite}
+@keyframes pinpulse{0%{opacity:.8;transform:scale(.3)}100%{opacity:0;transform:scale(1.8)}}
+.addr-block{margin-top:18px}
+.addr-block strong{display:block;font-family:var(--display);font-weight:600;font-size:1.35rem;color:var(--cream)}
+.addr-block span{color:var(--muted);font-size:.95rem}
+.sub-card{max-width:520px;margin:46px auto 0;padding:30px 22px;border:1px solid rgba(201,164,92,.3);border-radius:20px;background:linear-gradient(180deg,rgba(14,74,55,.25),rgba(4,16,12,.3))}
+.sub-card h3{font-family:var(--display);font-weight:500;font-size:1.6rem;color:var(--cream)}
+html[dir="rtl"] .sub-card h3{font-weight:700}
+.sub-card p{color:var(--muted);margin-top:6px}
+
+/* ---------- RSVP ---------- */
+.rsvp-icon{width:56px;height:56px;margin:0 auto 6px}
+.sheet{position:fixed;inset:0;z-index:300;display:flex;align-items:flex-end;justify-content:center}
+.sheet[hidden]{display:none}
+.sheet-bg{position:absolute;inset:0;background:rgba(1,6,4,.72);animation:fadeIn .35s ease}
+.sheet-card{position:relative;width:100%;max-width:480px;padding:28px 22px calc(24px + env(safe-area-inset-bottom));
+  background:var(--brocade),linear-gradient(180deg,#0d2c22,#06150f);border:1px solid rgba(201,164,92,.45);border-bottom:0;border-radius:26px 26px 0 0;
+  box-shadow:0 -20px 60px rgba(0,0,0,.6);animation:sheetUp .5s cubic-bezier(.2,.8,.2,1);text-align:center}
+@media (min-width:640px){.sheet{align-items:center}.sheet-card{border-radius:26px;border-bottom:1px solid rgba(201,164,92,.45);padding-bottom:28px}}
+@keyframes sheetUp{from{transform:translateY(40px);opacity:0}to{transform:none;opacity:1}}
+.sheet-card h3{font-family:var(--display);font-weight:500;font-size:1.7rem;color:var(--gold-l);margin-bottom:16px}
+html[dir="rtl"] .sheet-card h3{font-weight:700}
+.field{display:block;text-align:start;margin-top:14px}
+.field>span{display:block;font-family:var(--ui);font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+html[dir="rtl"] .field>span{letter-spacing:0;font-size:.95rem}
+.field input,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--cream);background:rgba(0,0,0,.3);border:1px solid rgba(201,164,92,.35);border-radius:12px;padding:13px 14px;outline:none;transition:border-color .3s,box-shadow .3s;resize:none}
+.field input:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(201,164,92,.15)}
+.field input::placeholder,.field textarea::placeholder{color:#6f7a70}
+.stepper{display:flex;align-items:center;gap:0;border:1px solid rgba(201,164,92,.35);border-radius:12px;overflow:hidden;width:max-content}
+.stepper button{width:50px;height:48px;background:rgba(14,74,55,.35);border:0;color:var(--gold-l);font-size:1.4rem;cursor:pointer}
+.stepper output{min-width:56px;text-align:center;font-family:var(--serif);font-size:1.5rem;color:var(--cream)}
+.form-err{color:#f0a58f;font-size:.9rem;min-height:1.4em;margin-top:10px}
+.sheet-card .btn{width:100%;margin-top:6px}
+.btn-cancel{display:block;margin:14px auto 0;background:none;border:0;color:var(--muted);cursor:pointer;font-family:var(--ui);font-size:.9rem;text-decoration:underline;text-underline-offset:4px}
+
+/* ---------- CITIES ---------- */
+.cities{position:relative;height:260vh;z-index:2}
+.cities-sticky{position:sticky;top:0;height:100vh;height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
+  padding:64px 14px 84px;overflow:hidden;text-align:center}
+.cities-sticky::before{content:"";position:absolute;left:50%;top:55%;width:120vw;height:60vh;transform:translate(-50%,-50%);
+  background:radial-gradient(closest-side,rgba(201,164,92,.16),transparent);opacity:var(--m,0);pointer-events:none}
+.city-head{opacity:var(--t,0);transform:translateY(calc((1 - var(--t,0)) * 18px))}
+.city-head .alt{font-family:var(--ar);font-size:clamp(1.1rem,4.6vw,1.5rem);color:#d8c79a;margin-top:4px}
+html[dir="rtl"] .city-head .alt{font-family:var(--serif);font-style:italic}
+.stage{position:relative;width:100%;max-width:940px;aspect-ratio:800/240;margin:18px 0 4px}
+.city{position:absolute;top:0;width:50%;height:100%;overflow:visible;will-change:transform}
+.city-l{left:0;transform:translate3d(calc((1 - var(--m,0)) * -70%),0,0);opacity:calc(.25 + var(--m,0) * .75)}
+.city-r{right:0;transform:translate3d(calc((1 - var(--m,0)) * 70%),0,0);opacity:calc(.25 + var(--m,0) * .75)}
+.flight{position:absolute;inset:0;width:100%;height:100%;overflow:visible;opacity:calc(var(--q,0) * 5);pointer-events:none}
+.waves{animation:waves 6s linear infinite}
+.waves.w2{animation-duration:9s;animation-direction:reverse}
+@keyframes waves{to{transform:translateX(-40px)}}
+.ferry{animation:ferry 40s linear infinite}
+@keyframes ferry{from{transform:translateX(-60px)}to{transform:translateX(140px)}}
+.gulls{animation:gulls 7s ease-in-out infinite}
+@keyframes gulls{50%{transform:translate(6px,-4px)}}
+.city-labels{display:flex;width:100%;max-width:940px;justify-content:space-around;font-family:var(--ui);font-size:.8rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);opacity:var(--m,0)}
+.city-labels span b{font-family:var(--ar);font-weight:400;letter-spacing:0;font-size:1.05rem;color:#d8c79a;margin:0 .35em}
+.city-text{max-width:30rem;color:var(--muted);opacity:var(--q2,0);transform:translateY(calc((1 - var(--q2,0)) * 12px));margin-top:8px}
+.cities.static{height:auto}
+.cities.static .cities-sticky{position:relative;height:auto;padding:90px 14px}
+
+/* ---------- VERSES ---------- */
+.bismillah{font-family:var(--ar);font-size:clamp(1.9rem,8.5vw,3rem);line-height:1.7;font-weight:400}
+.quote{max-width:600px;margin:0 auto;padding:10px 4px}
+.q-ar{font-family:var(--ar);font-size:clamp(1.35rem,5.4vw,1.9rem);line-height:2.05;color:var(--gold-l)}
+.q-tr{font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,4.6vw,1.5rem);line-height:1.5;color:var(--cream);margin-top:10px}
+.q-small.q-tr{font-size:clamp(1rem,3.8vw,1.15rem);color:var(--muted)}
+.q-small.q-ar{font-size:clamp(1.1rem,4.4vw,1.35rem);color:#d8c79a}
+.q-ref{font-family:var(--ui);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-top:14px}
+html[dir="rtl"] .q-ref{letter-spacing:0;text-transform:none;font-size:.95rem}
+.quote.saying .q-primary.q-tr{font-size:clamp(1.35rem,5.6vw,1.85rem);color:var(--jasmine)}
+.quote.saying .q-primary.q-ar{font-size:clamp(1.5rem,6vw,2rem);color:var(--jasmine)}
+.q-sep{width:120px;margin:18px auto;opacity:.8}
+
+/* ---------- TAKI NOTE & CLOSING ---------- */
+.taki-note{
+  max-width:520px;margin:0 auto 46px;padding:22px 24px;
+  border:1px solid rgba(201,164,92,.38);border-radius:18px;
+  background:linear-gradient(180deg,rgba(14,74,55,.28),rgba(4,16,12,.38));
+  box-shadow:0 18px 40px -24px rgba(0,0,0,.7)
+}
+.taki-note p{color:var(--cream);font-size:1rem;margin-top:8px;line-height:1.7}
+html[dir="rtl"] .taki-note p{font-size:1.12rem}
+.closing-sprig{width:150px;margin:0 auto 10px;overflow:visible}
+.closing-sprig .sway{transform-origin:75px 120px;animation:sway 6s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(3deg)}}
+.prayer{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(2.2rem,10vw,3.4rem);line-height:1.3;margin-top:18px}
+html[dir="rtl"] .prayer{font-style:normal;font-weight:700}
+.dua{font-family:var(--ar);font-size:clamp(1.3rem,5.2vw,1.7rem);line-height:2;color:var(--gold-l);margin-top:16px}
+.dua-meaning{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1.1rem;margin-top:6px}
+.signature{font-family:var(--serif);font-size:1.45rem;margin-top:30px;color:var(--cream);line-height:1.35}
+.signature small{display:block;font-family:var(--ar);font-size:1.15rem;color:#d8c79a;margin-top:4px}
+footer{position:relative;z-index:2;text-align:center;padding:30px 20px calc(126px + env(safe-area-inset-bottom));font-family:var(--ui);font-size:.75rem;letter-spacing:.3em;color:#6f7a70}
+html[dir="rtl"] footer{letter-spacing:0;font-size:.9rem}
+
+@media (min-width:900px){
+  .section{padding:130px 22px}
+  .door-scene{width:min(284px,calc(54vh * .706))}
+}
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+  body.locked main{transform:none;filter:none}
+}
+</style>
+<noscript><style>.intro{display:none}.names .ch,.names .amp,.names-ar,.hero-meta,.bf,.reveal{opacity:1!important;transform:none!important}.bl{transform:none!important}.stem{stroke-dashoffset:0!important}body.locked{overflow:auto;height:auto}body.locked main{transform:none;filter:none}</style></noscript>
+</head>
+<body class="locked">
+
+<!-- ===================== SHARED SVG DEFINITIONS ===================== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gDoor" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#082a1f"/><stop offset=".55" stop-color="#0f4a37"/><stop offset="1" stop-color="#072318"/>
+    </linearGradient>
+    <radialGradient id="gWallBg" cx=".5" cy=".5" r=".42">
+      <stop offset="0" stop-color="#0e2c21"/><stop offset=".45" stop-color="#061711"/><stop offset="1" stop-color="#020806"/>
+    </radialGradient>
+    <linearGradient id="gRingShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity=".05"/><stop offset="1" stop-color="#000" stop-opacity=".55"/>
+    </linearGradient>
+    <pattern id="pAblaq" width="8" height="16" patternUnits="userSpaceOnUse">
+      <rect width="8" height="8" fill="#e7dbc1"/><rect y="8" width="8" height="8" fill="#17140f"/>
+    </pattern>
+    <pattern id="pAblaqSoft" width="10" height="14" patternUnits="userSpaceOnUse">
+      <rect width="10" height="7" fill="#46564a"/><rect y="7" width="10" height="7" fill="#1b2721"/>
+    </pattern>
+    <pattern id="pLattice" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <path d="M0 0H6M0 0V6" stroke="#c9a45c" stroke-width=".7" stroke-opacity=".6"/>
+    </pattern>
+    <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04120d"/><stop offset=".3" stop-color="#0a281e"/><stop offset=".48" stop-color="#284634"/><stop offset=".6" stop-color="#4b4a2e"/>
+    </linearGradient>
+    <linearGradient id="gWallShade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#03100b" stop-opacity=".25"/><stop offset="1" stop-color="#03100b" stop-opacity=".7"/>
+    </linearGradient>
+    <radialGradient id="gLamp"><stop offset="0" stop-color="#ffe6a8" stop-opacity=".9"/><stop offset="1" stop-color="#ffe6a8" stop-opacity="0"/></radialGradient>
+    <linearGradient id="gWater" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe3d3"/><stop offset="1" stop-color="#1f6b55"/></linearGradient>
+    <linearGradient id="gStone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8cbaa"/><stop offset="1" stop-color="#6f6550"/></linearGradient>
+    <linearGradient id="gFloor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2d22"/><stop offset="1" stop-color="#0a120e"/></linearGradient>
+    <linearGradient id="gCity" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a5a44"/><stop offset="1" stop-color="#06180f"/></linearGradient>
+    <linearGradient id="gMount" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#123a2d"/><stop offset="1" stop-color="#05120d"/></linearGradient>
+    <linearGradient id="gSea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#103d36"/><stop offset="1" stop-color="#03100c"/></linearGradient>
+    <linearGradient id="gPetal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#efe5cc"/></linearGradient>
+    <clipPath id="cpArch"><path d="M24 400 L24 152 Q24 66 150 24 Q276 66 276 152 L276 400Z"/></clipPath>
+    <mask id="moonMask"><circle cx="212" cy="104" r="13" fill="#fff"/><circle cx="218" cy="99" r="11" fill="#000"/></mask>
+
+    <!-- jasmine flower -->
+    <symbol id="jas" viewBox="-16 -16 32 32">
+      <g fill="url(#gPetal)" stroke="#dccfae" stroke-width=".45">
+        <path d="M0 0C-5-4-6-11-1-15C3-12 4-5 0 0Z"/>
+        <path d="M0 0C-5-4-6-11-1-15C3-12 4-5 0 0Z" transform="rotate(72)"/>
+        <path d="M0 0C-5-4-6-11-1-15C3-12 4-5 0 0Z" transform="rotate(144)"/>
+        <path d="M0 0C-5-4-6-11-1-15C3-12 4-5 0 0Z" transform="rotate(216)"/>
+        <path d="M0 0C-5-4-6-11-1-15C3-12 4-5 0 0Z" transform="rotate(288)"/>
+      </g>
+      <circle r="2.3" fill="#e8cf7c"/><circle r="1" fill="#b9963f"/>
+    </symbol>
+    <symbol id="bud" viewBox="-6 -14 12 16">
+      <path d="M0 2C-3-2-3-8 0-13C3-8 3-2 0 2Z" fill="#fbf1ea" stroke="#e2b9b0" stroke-width=".5"/>
+      <path d="M0-8C-1-10-1-12 0-13C1-12 1-10 0-8Z" fill="#e7b7b0"/>
+    </symbol>
+    <g id="star8" fill="none" stroke="#c9a45c" stroke-width=".9">
+      <rect x="-9" y="-9" width="18" height="18"/><rect x="-9" y="-9" width="18" height="18" transform="rotate(45)"/><circle r="3.4"/>
+    </g>
+    <path id="archBoxPath" d="M3 127 L3 48 Q3 18 50 3 Q97 18 97 48 L97 127Z"/>
+
+    <!-- door leaf artwork (80 x 300) -->
+    <g id="leafArt">
+      <path d="M0 300 L0 90 Q0 26 80 0 L80 300Z" fill="url(#gDoor)"/>
+      <path d="M7 132 L7 92 Q7 40 73 12 L73 132Z" fill="url(#pLattice)" stroke="#c9a45c" stroke-width=".9" stroke-opacity=".85"/>
+      <use href="#star8" x="44" y="92"/>
+      <rect x="7" y="142" width="66" height="72" fill="none" stroke="#c9a45c" stroke-width=".9" stroke-opacity=".85"/>
+      <rect x="12" y="147" width="56" height="62" fill="none" stroke="#c9a45c" stroke-width=".5" stroke-opacity=".5"/>
+      <use href="#star8" x="40" y="178"/>
+      <rect x="7" y="222" width="66" height="70" fill="none" stroke="#c9a45c" stroke-width=".9" stroke-opacity=".85"/>
+      <rect x="12" y="227" width="56" height="60" fill="none" stroke="#c9a45c" stroke-width=".5" stroke-opacity=".5"/>
+      <use href="#star8" x="40" y="257"/>
+      <g fill="#d9b86c">
+        <circle cx="12" cy="147" r="1.5"/><circle cx="68" cy="147" r="1.5"/><circle cx="12" cy="209" r="1.5"/><circle cx="68" cy="209" r="1.5"/>
+        <circle cx="12" cy="227" r="1.5"/><circle cx="68" cy="227" r="1.5"/><circle cx="12" cy="287" r="1.5"/><circle cx="68" cy="287" r="1.5"/>
+      </g>
+      <circle cx="69" cy="192" r="5.5" fill="none" stroke="#e3c47e" stroke-width="1.6"/>
+      <circle cx="69" cy="186" r="1.9" fill="#e3c47e"/>
+      <rect x="77" y="0" width="3" height="300" fill="#000" opacity=".35"/>
+      <rect x="0" y="0" width="2" height="300" fill="#fff" opacity=".05"/>
+    </g>
+
+    <g id="corner" fill="none" stroke="#b08a43" stroke-width="1">
+      <path d="M2 40V9Q2 2 9 2H40"/><path d="M8 40V14Q8 8 14 8H40" stroke-opacity=".55"/>
+      <path d="M14 14q9 2 11 11q-9-2-11-11Z" fill="#c9a45c" fill-opacity=".55"/>
+      <circle cx="2" cy="2" r="1.8" fill="#b08a43" stroke="none"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ===================== INTRO / WALK-THROUGH DOOR ===================== -->
+<div class="intro" id="intro">
+  <div class="intro-ui intro-ui-top">
+    <div class="lang-pick" role="group" aria-label="Dil / اللغة">
+      <button type="button" data-lang-btn="tr" aria-pressed="true">Türkçe</button>
+      <button type="button" class="ar" data-lang-btn="ar" aria-pressed="false" lang="ar">العربية</button>
+    </div>
+    <p class="intro-couple gold-text" data-i18n="introCouple">Samer Allaham &amp; Bayan Alnashoukati</p>
+    <p class="intro-hint" data-i18n="introHint">Size özel bir davetiye var</p>
+  </div>
+
+  <div class="door-scene" id="doorScene" role="button" tabindex="0" aria-label="Davetiyeyi aç">
+    <!-- Full-screen dark emerald wall with a REAL transparent pointed-arch doorway cutout in the center -->
+    <svg class="wall-cutout" viewBox="-1080 -1030 2400 2400" preserveAspectRatio="none" aria-hidden="true">
+      <path fill-rule="evenodd" fill="url(#gWallBg)" d="M-1080 -1030 H1320 V1370 H-1080 Z M40 340 L40 130 Q40 66 120 40 Q200 66 200 130 L200 340 Z"/>
+    </svg>
+
+    <div class="door-threshold-glow" aria-hidden="true"></div>
+
+    <!-- Swinging 3D wooden door leaves that reveal the real invitation behind -->
+    <div class="leaves">
+      <div class="leaf leaf-l"><svg viewBox="0 0 80 300" preserveAspectRatio="none"><use href="#leafArt"/></svg></div>
+      <div class="leaf leaf-r"><svg viewBox="0 0 80 300" preserveAspectRatio="none"><use href="#leafArt"/></svg></div>
+    </div>
+
+    <!-- Ablaq stone arch frame + jasmine vines -->
+    <svg class="door-layer" viewBox="0 0 240 340">
+      <path fill-rule="evenodd" fill="url(#pAblaq)" d="M8 340 L8 118 Q8 40 120 6 Q232 40 232 118 L232 340Z M40 340 L40 130 Q40 66 120 40 Q200 66 200 130 L200 340Z"/>
+      <path fill-rule="evenodd" fill="url(#gRingShade)" d="M8 340 L8 118 Q8 40 120 6 Q232 40 232 118 L232 340Z M40 340 L40 130 Q40 66 120 40 Q200 66 200 130 L200 340Z"/>
+      <path d="M8 340 L8 118 Q8 40 120 6 Q232 40 232 118 L232 340" fill="none" stroke="#c9a45c" stroke-width="1.3"/>
+      <path d="M40 340 L40 130 Q40 66 120 40 Q200 66 200 130 L200 340" fill="none" stroke="#e3c47e" stroke-width="1.5"/>
+      <path d="M33 340 L33 128 Q33 60 120 32 Q207 60 207 128 L207 340" fill="none" stroke="#c9a45c" stroke-width=".6" stroke-opacity=".7"/>
+      <circle cx="120" cy="22" r="9" fill="#0b2a20" stroke="#e3c47e" stroke-width="1.1"/>
+      <use href="#star8" transform="translate(120 22) scale(.55)"/>
+      <rect x="0" y="332" width="240" height="8" fill="#1d1a15" stroke="#c9a45c" stroke-width=".6"/>
+      <g class="vine">
+        <path d="M14 70 C 30 40 60 22 92 16 M226 70 C 210 40 180 22 148 16 M14 70 C 6 100 18 120 10 150 M226 70 C 234 100 222 120 230 150" fill="none" stroke="#2f6e4f" stroke-width="1.6" stroke-linecap="round"/>
+        <g fill="#2a6a4a">
+          <path d="M30 44c6-6 13-6 18-2c-6 6-13 6-18 2Z"/><path d="M62 24c5-6 12-7 17-4c-5 6-12 7-17 4Z"/>
+          <path d="M210 44c-6-6-13-6-18-2c6 6 13 6 18 2Z"/><path d="M178 24c-5-6-12-7-17-4c5 6 12 7 17 4Z"/>
+          <path d="M12 104c-6-4-7-10-4-15c6 4 7 10 4 15Z"/><path d="M228 104c6-4 7-10 4-15c-6 4-7 10-4 15Z"/>
+        </g>
+        <use href="#jas" x="16" y="56" width="16" height="16"/><use href="#jas" x="44" y="26" width="13" height="13"/>
+        <use href="#jas" x="80" y="8" width="12" height="12"/><use href="#jas" x="2" y="122" width="13" height="13"/>
+        <use href="#jas" x="208" y="56" width="16" height="16"/><use href="#jas" x="183" y="26" width="13" height="13"/>
+        <use href="#jas" x="148" y="8" width="12" height="12"/><use href="#jas" x="225" y="122" width="13" height="13"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="intro-ui intro-ui-bot">
+    <button class="btn btn-open" id="openBtn" type="button">
+      <svg viewBox="-16 -16 32 32" aria-hidden="true"><use href="#jas" x="-16" y="-16" width="32" height="32"/></svg>
+      <span data-i18n="openBtn">Davetiyeyi aç</span>
+    </button>
+    <p class="intro-hint" style="font-size:.78rem;opacity:.8" data-i18n="tagline">Şam'dan İstanbul'a, yaseminle</p>
+  </div>
+</div>
+
+<!-- fixed top nav (live countdown + directions + music + language) -->
+<header class="top-nav" id="topNav">
+  <div class="nav-left">
+    <a class="nav-cd" id="navCd" href="#countdown" aria-label="Geri sayım">
+      <svg viewBox="-16 -16 32 32" aria-hidden="true"><use href="#jas" x="-16" y="-16" width="32" height="32"/></svg>
+      <span class="cd-val" id="navCdText">—</span>
+    </a>
+    <a class="nav-dir" id="navDir" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      <span data-i18n="navDirections">Yol tarifi</span>
+    </a>
+  </div>
+  <div class="nav-actions">
+    <button class="nav-btn nav-music" id="musicBtn" type="button" aria-pressed="false" aria-label="Müziği aç">
+      <svg class="flower" viewBox="-16 -16 32 32" aria-hidden="true">
+        <use href="#jas" x="-14" y="-14" width="28" height="28"/>
+      </svg>
+      <svg viewBox="0 0 28 28" style="position:absolute;width:20px;height:20px" aria-hidden="true"><path class="slash" d="M5 23L23 5" stroke="#f3dca0" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-btn nav-lang" id="langFab" type="button" aria-label="Dil değiştir / تغيير اللغة"><span class="ar" lang="ar">العربية</span></button>
+  </div>
+</header>
+
+<!-- fixed bottom RSVP bar -->
+<div class="rsvp-bar" id="rsvpBar" role="region" aria-label="Katılım">
+  <span class="rsvp-bar-q" data-i18n="rsvpTitle">Bizimle olacak mısınız?</span>
+  <div class="rsvp-bar-btns">
+    <button class="btn" type="button" data-rsvp="yes"><span data-i18n="rsvpYes">Geleceğim</span></button>
+    <button class="btn btn-ghost" type="button" data-rsvp="no"><span data-i18n="rsvpNo">Gelemeyeceğim</span></button>
+  </div>
+</div>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<main>
+  <!-- ===================== 1. HERO / COURTYARD ===================== -->
+  <section class="hero" id="hero">
+    <div class="arch-window" aria-hidden="true">
+      <svg viewBox="0 0 300 400">
+        <g clip-path="url(#cpArch)">
+          <rect width="300" height="400" fill="url(#gSky)"/>
+          <g fill="#f6ecd0">
+            <circle class="twinkle" cx="80" cy="120" r=".9"/><circle class="twinkle" cx="120" cy="80" r="1.1"/><circle class="twinkle" cx="170" cy="62" r=".8"/>
+            <circle class="twinkle" cx="60" cy="160" r=".7"/><circle class="twinkle" cx="250" cy="150" r=".9"/><circle class="twinkle" cx="140" cy="130" r=".7"/>
+            <circle class="twinkle" cx="185" cy="110" r="1"/><circle class="twinkle" cx="100" cy="150" r=".8"/><circle class="twinkle" cx="236" cy="168" r=".7"/>
+          </g>
+          <circle cx="212" cy="104" r="13" fill="#f6e7b8" mask="url(#moonMask)"/>
+          <circle cx="212" cy="104" r="26" fill="url(#gLamp)" opacity=".18"/>
+          <!-- back wall with ablaq -->
+          <rect x="0" y="190" width="300" height="150" fill="url(#pAblaqSoft)"/>
+          <rect x="0" y="190" width="300" height="150" fill="url(#gWallShade)"/>
+          <rect x="0" y="185" width="300" height="6" fill="#2a2a20" stroke="#c9a45c" stroke-width=".6" stroke-opacity=".7"/>
+          <!-- iwan -->
+          <path d="M100 340 L100 255 Q100 212 150 196 Q200 212 200 255 L200 340Z" fill="#06140f" stroke="#c9a45c" stroke-width=".9"/>
+          <path d="M108 340 L108 257 Q108 220 150 206 Q192 220 192 257 L192 340" fill="none" stroke="#c9a45c" stroke-width=".5" stroke-opacity=".6"/>
+          <ellipse cx="150" cy="300" rx="40" ry="44" fill="url(#gLamp)" opacity=".35"/>
+          <path d="M150 206 V236" stroke="#c9a45c" stroke-width=".6"/>
+          <g class="flicker"><path d="M144 236 h12 l-2 12 l-4 4 l-4-4Z" fill="#e8c574" stroke="#8c6a2e" stroke-width=".5"/><circle cx="150" cy="244" r="12" fill="url(#gLamp)" opacity=".7"/></g>
+          <!-- side windows with mashrabiya -->
+          <path d="M38 300 L38 262 Q38 246 54 238 Q70 246 70 262 L70 300Z" fill="url(#pLattice)" stroke="#c9a45c" stroke-width=".8"/>
+          <path d="M230 300 L230 262 Q230 246 246 238 Q262 246 262 262 L262 300Z" fill="url(#pLattice)" stroke="#c9a45c" stroke-width=".8"/>
+          <rect x="36" y="300" width="36" height="4" fill="#2a2a20"/><rect x="228" y="300" width="36" height="4" fill="#2a2a20"/>
+          <!-- lemon tree -->
+          <path d="M58 342 C 60 314 52 292 62 268" stroke="#3a2a1a" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <g fill="#1f5a41"><circle cx="44" cy="256" r="26"/><circle cx="76" cy="246" r="23"/><circle cx="60" cy="226" r="20"/></g>
+          <g fill="#2b7051" opacity=".8"><circle cx="52" cy="240" r="12"/><circle cx="78" cy="236" r="9"/></g>
+          <g fill="#e9c95c"><circle cx="36" cy="250" r="2.6"/><circle cx="66" cy="232" r="2.4"/><circle cx="82" cy="254" r="2.6"/><circle cx="50" cy="270" r="2.3"/><circle cx="70" cy="262" r="2.2"/></g>
+          <!-- jasmine vine top right -->
+          <path d="M300 180 C 280 196 262 200 252 220 C 246 232 252 250 244 262" stroke="#2c6a4b" stroke-width="2" fill="none"/>
+          <g fill="#235c42"><circle cx="286" cy="192" r="11"/><circle cx="266" cy="204" r="10"/><circle cx="254" cy="224" r="9"/><circle cx="250" cy="246" r="7"/><circle cx="296" cy="208" r="9"/></g>
+          <use href="#jas" x="278" y="184" width="10" height="10"/><use href="#jas" x="262" y="196" width="9" height="9"/>
+          <use href="#jas" x="250" y="218" width="9" height="9"/><use href="#jas" x="290" y="202" width="8" height="8"/><use href="#jas" x="246" y="240" width="8" height="8"/>
+          <!-- floor -->
+          <rect x="0" y="340" width="300" height="60" fill="url(#gFloor)"/>
+          <g stroke="#c9a45c" stroke-opacity=".16" stroke-width=".6">
+            <path d="M0 352H300M0 368H300M0 388H300"/>
+            <path d="M123 340L60 400M96 340L-20 400M177 340L240 400M204 340L320 400M150 340V400M69 340L-100 400M231 340L400 400"/>
+          </g>
+          <!-- fountain -->
+          <ellipse cx="150" cy="352" rx="74" ry="13" fill="#0d2b20" stroke="#c9a45c" stroke-width=".8"/>
+          <ellipse cx="150" cy="352" rx="66" ry="10" fill="url(#gWater)" opacity=".85"/>
+          <ellipse class="ripple" cx="150" cy="352" rx="18" ry="3" fill="none" stroke="#e6f6ee" stroke-width=".8"/>
+          <ellipse class="ripple r2" cx="150" cy="352" rx="18" ry="3" fill="none" stroke="#e6f6ee" stroke-width=".8"/>
+          <path d="M146 352 L147.5 324 L152.5 324 L154 352Z" fill="url(#gStone)"/>
+          <ellipse cx="150" cy="324" rx="15" ry="3.6" fill="#cbbd9b" stroke="#8c6a2e" stroke-width=".5"/>
+          <g fill="none" stroke="#e6f6ee" stroke-width="1.1" stroke-linecap="round" opacity=".9">
+            <path class="jet" d="M150 322 L150 296"/>
+            <path class="jet b" d="M150 298 Q128 294 120 350"/>
+            <path class="jet b" d="M150 298 Q172 294 180 350"/>
+            <path class="jet" d="M136 324 Q132 330 131 348"/>
+            <path class="jet" d="M164 324 Q168 330 169 348"/>
+          </g>
+          <path d="M76 352 L76 366 Q150 386 224 366 L224 352 Q150 372 76 352Z" fill="url(#gStone)" stroke="#8c6a2e" stroke-width=".6"/>
+          <path d="M76 359 Q150 379 224 359" fill="none" stroke="#3d3528" stroke-width="3" opacity=".5"/>
+          <g fill="#8c6a2e" opacity=".8"><path d="M110 368l3-3l3 3l-3 3Z"/><path d="M147 373l3-3l3 3l-3 3Z"/><path d="M184 368l3-3l3 3l-3 3Z"/></g>
+          <!-- hanging lanterns -->
+          <path d="M84 40 V108 M216 40 V96" stroke="#c9a45c" stroke-width=".6" stroke-opacity=".8"/>
+          <g class="flicker"><circle cx="84" cy="118" r="16" fill="url(#gLamp)" opacity=".55"/><path d="M78 108 h12 l-1.5 14 l-4.5 5 l-4.5-5Z" fill="#e3bd66" stroke="#7a5a26" stroke-width=".5"/></g>
+          <g class="flicker" style="animation-delay:1.1s"><circle cx="216" cy="106" r="15" fill="url(#gLamp)" opacity=".5"/><path d="M210 96 h12 l-1.5 14 l-4.5 5 l-4.5-5Z" fill="#e3bd66" stroke="#7a5a26" stroke-width=".5"/></g>
+          <ellipse cx="150" cy="360" rx="140" ry="60" fill="url(#gLamp)" opacity=".12"/>
+        </g>
+        <!-- arch frame -->
+        <path fill-rule="evenodd" fill="url(#pAblaq)" opacity=".9" d="M8 400 L8 148 Q8 54 150 8 Q292 54 292 148 L292 400Z M24 400 L24 152 Q24 66 150 24 Q276 66 276 152 L276 400Z"/>
+        <path fill-rule="evenodd" fill="url(#gRingShade)" d="M8 400 L8 148 Q8 54 150 8 Q292 54 292 148 L292 400Z M24 400 L24 152 Q24 66 150 24 Q276 66 276 152 L276 400Z"/>
+        <path d="M8 400 L8 148 Q8 54 150 8 Q292 54 292 148 L292 400" fill="none" stroke="#c9a45c" stroke-width="1.2"/>
+        <path d="M24 400 L24 152 Q24 66 150 24 Q276 66 276 152 L276 400" fill="none" stroke="#f0d696" stroke-width="1.4"/>
+        <circle cx="150" cy="15" r="7" fill="#0b2a20" stroke="#e3c47e"/>
+        <use href="#jas" x="143" y="8" width="14" height="14"/>
+      </svg>
+    </div>
+
+    <svg class="branch" viewBox="0 0 320 90" aria-hidden="true">
+      <path class="stem" pathLength="1" d="M10 70 C 60 40, 110 80, 160 50 S 260 30, 310 60" fill="none" stroke="#3f7d5b" stroke-width="1.6" stroke-linecap="round"/>
+      <g fill="#2f7a55">
+        <g transform="translate(30 62) rotate(-165)"><path class="bl" style="--d:.4s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(60 58) rotate(-70)"><path class="bl" style="--d:.55s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(104 62) rotate(65)"><path class="bl" style="--d:.7s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(140 58) rotate(-75)"><path class="bl" style="--d:.85s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(180 40) rotate(110)"><path class="bl" style="--d:1s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(214 32) rotate(-85)"><path class="bl" style="--d:1.15s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(255 35) rotate(70)"><path class="bl" style="--d:1.3s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(290 48) rotate(-40)"><path class="bl" style="--d:1.45s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+        <g transform="translate(300 54) rotate(30)"><path class="bl" style="--d:1.55s" d="M0 0C4-4 11-4 16 0C11 4 4 4 0 0Z"/></g>
+      </g>
+      <g transform="translate(47 58)"><g class="bf" style="--d:.8s"><use href="#jas" x="-10" y="-10" width="20" height="20"/></g></g>
+      <g transform="translate(85 60)"><g class="bf" style="--d:.95s"><use href="#bud" x="-4" y="-11" width="8" height="11"/></g></g>
+      <g transform="translate(122 61)"><g class="bf" style="--d:1.1s"><use href="#jas" x="-11" y="-11" width="22" height="22"/></g></g>
+      <g transform="translate(160 49)"><g class="bf" style="--d:1.25s"><use href="#jas" x="-14" y="-14" width="28" height="28"/></g></g>
+      <g transform="translate(197 35)"><g class="bf" style="--d:1.4s"><use href="#bud" x="-4" y="-11" width="8" height="11"/></g></g>
+      <g transform="translate(235 32)"><g class="bf" style="--d:1.55s"><use href="#jas" x="-11" y="-11" width="22" height="22"/></g></g>
+      <g transform="translate(272 41)"><g class="bf" style="--d:1.7s"><use href="#jas" x="-9" y="-9" width="18" height="18"/></g></g>
+      <g transform="translate(306 58)"><g class="bf" style="--d:1.85s"><use href="#bud" x="-3.5" y="-10" width="7" height="10"/></g></g>
+    </svg>
+
+    <h1 class="names" dir="ltr" id="namesLatin" aria-label="Samer Allaham &amp; Bayan Alnashoukati"></h1>
+    <p class="names-ar" lang="ar" dir="rtl" id="namesAr">سامر اللحام وبيان النشوقاتي</p>
+    <div class="hero-meta">
+      <span class="kicker" data-i18n="heroKicker">Nikah Töreni</span>
+      <p class="date" data-i18n="heroDate">29 Kasım 2026 · Pazar · 12:00</p>
+      <p class="place" data-i18n="heroPlace">Fatih Belediyesi Evlendirme Dairesi · İstanbul</p>
+    </div>
+    <div class="scroll-cue"><span data-i18n="scrollCue">Kaydırın</span><i></i></div>
+  </section>
+
+  <!-- ===================== 2. INVITATION CARD ===================== -->
+  <section class="section" id="invite">
+    <article class="card reveal">
+      <svg class="medallion" viewBox="-22 -22 44 44" aria-hidden="true"><circle r="20" fill="none" stroke="#b08a43" stroke-width=".8"/><circle r="16.5" fill="none" stroke="#b08a43" stroke-width=".5" stroke-opacity=".6"/><use href="#jas" x="-14" y="-14" width="28" height="28"/></svg>
+      <svg class="corner l" viewBox="0 0 42 42" aria-hidden="true"><use href="#corner"/></svg>
+      <svg class="corner r" viewBox="0 0 42 42" aria-hidden="true"><use href="#corner"/></svg>
+      <p class="kicker" data-i18n="inviteKicker">Davetlisiniz</p>
+      <h2 class="card-couple">
+        <span id="cardGroom" dir="ltr">Samer Allaham</span>
+        <span class="c-amp" aria-hidden="true">&amp;</span>
+        <span id="cardBride" dir="ltr">Bayan Alnashoukati</span>
+        <small lang="ar" dir="rtl" id="cardAr">سامر اللحام وبيان النشوقاتي</small>
+      </h2>
+      <p class="card-text" data-i18n="inviteText"></p>
+      <div class="date-grid">
+        <div class="date-side"><span data-i18n="dayName">Pazar</span></div>
+        <div><div class="date-num" data-i18n="dayNum">29</div></div>
+        <div class="date-side"><span data-i18n="timeValue">12:00</span><small data-i18n="timeNote">Saat</small></div>
+      </div>
+      <p class="month" data-i18n="monthYear">Kasım 2026</p>
+      <svg class="divider" viewBox="0 0 240 24" aria-hidden="true"><path d="M8 12H94M146 12H232" stroke="#b08a43" stroke-width=".8"/><path d="M96 12l4-4l4 4l-4 4ZM136 12l4-4l4 4l-4 4Z" fill="#b08a43"/><use href="#jas" x="108" y="0" width="24" height="24"/></svg>
+      <p class="kicker venue-label" data-i18n="venueLabel">Mekân</p>
+      <p class="venue-name" data-i18n="venueName">Fatih Belediyesi Evlendirme Dairesi</p>
+      <p class="venue-addr" data-i18n="venueAddress"></p>
+      <div class="gold-line" style="background:linear-gradient(90deg,transparent,#b08a43,transparent)"></div>
+      <p class="card-closing" data-i18n="inviteClosing"></p>
+    </article>
+  </section>
+
+  <!-- ===================== 3. COUNTDOWN ===================== -->
+  <section class="section countdown" id="countdown">
+    <div class="reveal">
+      <p class="kicker" data-i18n="countdownKicker">Geri sayım</p>
+      <h2 class="title gold-text" data-i18n="countdownTitle">Mutlu güne kalan zaman</h2>
+    </div>
+    <div class="cd reveal">
+      <div class="cd-box"><svg viewBox="0 0 100 130" preserveAspectRatio="none"><use href="#archBoxPath" fill="rgba(14,74,55,.32)" stroke="#c9a45c" stroke-width="1.2"/></svg><span class="cd-num" id="cdD">00</span><span class="cd-lbl" data-i18n="cdDays">Gün</span></div>
+      <div class="cd-box"><svg viewBox="0 0 100 130" preserveAspectRatio="none"><use href="#archBoxPath" fill="rgba(14,74,55,.32)" stroke="#c9a45c" stroke-width="1.2"/></svg><span class="cd-num" id="cdH">00</span><span class="cd-lbl" data-i18n="cdHours">Saat</span></div>
+      <div class="cd-box"><svg viewBox="0 0 100 130" preserveAspectRatio="none"><use href="#archBoxPath" fill="rgba(14,74,55,.32)" stroke="#c9a45c" stroke-width="1.2"/></svg><span class="cd-num" id="cdM">00</span><span class="cd-lbl" data-i18n="cdMinutes">Dakika</span></div>
+      <div class="cd-box"><svg viewBox="0 0 100 130" preserveAspectRatio="none"><use href="#archBoxPath" fill="rgba(14,74,55,.32)" stroke="#c9a45c" stroke-width="1.2"/></svg><span class="cd-num" id="cdS">00</span><span class="cd-lbl" data-i18n="cdSeconds">Saniye</span></div>
+    </div>
+    <div class="cd-done">
+      <p class="gold-text" data-i18n="cdDone">Bugün mutlu günümüz</p>
+      <p class="lead" data-i18n="cdDoneSub"></p>
+    </div>
+  </section>
+
+  <!-- ===================== 4. LOCATION + CALENDAR ===================== -->
+  <section class="section" id="location">
+    <div class="reveal">
+      <p class="kicker" data-i18n="locationKicker">Konum</p>
+      <h2 class="title gold-text" data-i18n="locationTitle">Fatih Belediyesi Evlendirme Dairesi</h2>
+    </div>
+    <a class="map-card reveal" id="mapLink" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 320 180" aria-hidden="true">
+        <rect width="320" height="180" fill="#0a2219"/>
+        <rect width="320" height="180" fill="url(#pLattice)" opacity=".25"/>
+        <path d="M150 0 C 180 24 230 40 320 46 L320 0Z" fill="#0f3a3f"/>
+        <path d="M150 0 C 180 24 230 40 320 46" fill="none" stroke="#c9a45c" stroke-opacity=".4"/>
+        <text x="262" y="22" font-family="Cormorant Garamond,serif" font-style="italic" font-size="11" fill="#9fc2b6" opacity=".8">Haliç</text>
+        <g fill="none" stroke="#c9a45c" stroke-linecap="round">
+          <path d="M0 120 C 70 112 130 104 200 96 S 300 84 320 80" stroke-width="3.2" stroke-opacity=".5"/>
+          <path d="M60 180 C 90 140 120 110 140 60 S 170 10 176 0" stroke-width="2.2" stroke-opacity=".38"/>
+          <path d="M210 180 C 205 150 200 120 196 96" stroke-width="1.6" stroke-opacity=".3"/>
+          <path d="M0 64 C 50 70 100 72 142 66" stroke-width="1.4" stroke-opacity=".28"/>
+          <path d="M20 160 C 80 150 140 150 320 140" stroke-width="1.2" stroke-opacity=".22"/>
+          <path d="M240 180 L 260 60 M100 0 L 110 180 M0 30 L 140 40" stroke-width=".8" stroke-opacity=".18"/>
+        </g>
+        <g fill="#164a37" opacity=".7"><rect x="30" y="80" width="40" height="22" rx="4"/><rect x="226" y="108" width="50" height="24" rx="4"/><circle cx="96" cy="150" r="10"/></g>
+        <text x="18" y="170" font-family="Jost,sans-serif" font-size="8.5" letter-spacing="2.5" fill="#ada58f" opacity=".75">HIRKA-İ ŞERİF · FATİH</text>
+        <text x="190" y="90" font-family="Jost,sans-serif" font-size="7.5" fill="#c9a45c" opacity=".6" transform="rotate(-7 190 90)">Akşemsettin Cd.</text>
+        <circle class="pin-pulse" cx="158" cy="98" r="16" fill="none" stroke="#f3dca0" stroke-width="1.2"/>
+        <g transform="translate(158 100)">
+          <path d="M0 0C-7-10-12-15-12-22A12 12 0 1 1 12-22C12-15 7-10 0 0Z" fill="#c9a45c" stroke="#f3dca0" stroke-width=".8"/>
+          <circle cy="-22" r="7.5" fill="#0a2219"/>
+          <use href="#jas" x="-6.5" y="-28.5" width="13" height="13"/>
+        </g>
+        <rect x="64" y="108" width="188" height="20" rx="10" fill="rgba(4,16,12,.88)" stroke="#c9a45c" stroke-opacity=".65" stroke-width=".7"/>
+        <text x="158" y="121.5" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="11.5" font-weight="600" fill="#f3dca0">Fatih Evlendirme Dairesi</text>
+      </svg>
+      <span class="map-cta" data-i18n="openMap">Haritada aç</span>
+    </a>
+    <div class="addr-block reveal">
+      <strong data-i18n="venueName">Fatih Belediyesi Evlendirme Dairesi</strong>
+      <span data-i18n="venueAddress"></span>
+    </div>
+    <div class="btn-row reveal">
+      <a class="btn" id="dirBtn" href="#" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span data-i18n="directions">Yol tarifi al</span>
+      </a>
+    </div>
+
+    <div class="sub-card reveal">
+      <h3 data-i18n="calendarTitle">Takviminize ekleyin</h3>
+      <p data-i18n="calendarText"></p>
+      <div class="btn-row">
+        <button class="btn btn-ghost" id="icsBtn" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>
+          <span data-i18n="addCalendar">Takvime ekle</span>
+        </button>
+      </div>
+      <a class="text-link" id="gcalLink" href="#" target="_blank" rel="noopener" data-i18n="googleCalendar">Google Takvim'e ekle</a>
+    </div>
+  </section>
+
+  <!-- ===================== 5. RSVP ===================== -->
+  <section class="section" id="rsvp">
+    <div class="reveal">
+      <svg class="rsvp-icon" viewBox="-16 -16 32 32" aria-hidden="true"><use href="#jas" x="-16" y="-16" width="32" height="32"/></svg>
+      <p class="kicker" data-i18n="rsvpKicker">Katılım</p>
+      <h2 class="title gold-text" data-i18n="rsvpTitle">Bizimle olacak mısınız?</h2>
+      <p class="lead" data-i18n="rsvpText"></p>
+    </div>
+    <div class="btn-row reveal">
+      <button class="btn" type="button" data-rsvp="yes"><span data-i18n="rsvpYes">Geleceğim</span></button>
+      <button class="btn btn-ghost" type="button" data-rsvp="no"><span data-i18n="rsvpNo">Gelemeyeceğim</span></button>
+    </div>
+  </section>
+
+  <!-- ===================== 6. TWO CITIES ===================== -->
+  <section class="cities" id="cities">
+    <div class="cities-sticky" id="citiesSticky">
+      <div class="city-head">
+        <p class="kicker" data-i18n="citiesKicker">İki şehir, tek yuva</p>
+        <h2 class="title gold-text" data-i18n="citiesTitle">Şam'da açan yasemin, İstanbul'da yuva oluyor</h2>
+        <p class="alt" data-i18n-alt="citiesTitle">ياسمينٌ تفتّح في الشام، ليزهر بيتًا في إسطنبول</p>
+      </div>
+
+      <div class="stage" dir="ltr" aria-hidden="true">
+        <!-- DAMASCUS -->
+        <svg class="city city-l" viewBox="0 0 400 240" preserveAspectRatio="xMidYMax meet">
+          <path d="M0 150 C 40 122 82 98 130 100 C 178 102 204 82 252 86 C 302 90 344 112 400 134 L400 240 L0 240Z" fill="url(#gMount)"/>
+          <path d="M0 150 C 40 122 82 98 130 100 C 178 102 204 82 252 86 C 302 90 344 112 400 134" fill="none" stroke="#c9a45c" stroke-opacity=".4" stroke-width=".8"/>
+          <g fill="#f3dca0">
+            <circle class="twinkle" cx="40" cy="150" r="1"/><circle cx="62" cy="138" r=".8"/><circle class="twinkle" cx="88" cy="128" r="1"/><circle cx="110" cy="121" r=".8"/>
+            <circle class="twinkle" cx="142" cy="118" r="1"/><circle cx="170" cy="112" r=".8"/><circle class="twinkle" cx="196" cy="104" r="1"/><circle cx="230" cy="100" r=".9"/>
+            <circle class="twinkle" cx="262" cy="103" r="1"/><circle cx="290" cy="110" r=".8"/><circle class="twinkle" cx="318" cy="120" r="1"/><circle cx="350" cy="132" r=".8"/>
+            <circle cx="75" cy="146" r=".7"/><circle class="twinkle" cx="125" cy="134" r=".8"/><circle cx="205" cy="118" r=".7"/><circle class="twinkle" cx="280" cy="124" r=".8"/><circle cx="336" cy="138" r=".7"/>
+          </g>
+          <g fill="#0b2a20" stroke="#c9a45c" stroke-opacity=".3" stroke-width=".6">
+            <path d="M68 205 C 62 190 64 172 68 160 C 72 172 74 190 68 205Z"/><path d="M84 205 C 79 192 80 178 84 168 C 88 178 89 192 84 205Z"/>
+            <path d="M347 205 C 342 190 343 176 347 166 C 351 176 352 190 347 205Z"/>
+          </g>
+          <g fill="url(#gCity)" stroke="#c9a45c" stroke-opacity=".6" stroke-width=".7">
+            <path d="M0 205 L0 184 L18 184 L18 178 L40 178 L40 188 L58 188 L58 181 L94 181 L94 186 L104 186 L104 176 L118 176 L118 205Z"/>
+            <path d="M314 205 L314 180 L330 180 L330 186 L352 186 L352 176 L372 176 L372 184 L400 184 L400 205Z"/>
+            <rect x="123" y="96" width="10" height="72"/><rect x="120" y="120" width="16" height="3"/><rect x="120" y="93" width="16" height="3"/>
+            <rect x="125" y="78" width="6" height="15"/><path d="M124 78 Q128 66 132 78Z"/>
+            <rect x="154" y="122" width="12" height="46"/><rect x="151" y="119" width="18" height="3"/><rect x="156.5" y="104" width="7" height="15"/><path d="M155.5 104 Q160 93 164.5 104Z"/>
+            <rect x="293" y="98" width="14" height="70"/><rect x="290" y="95" width="20" height="3"/><rect x="296" y="80" width="8" height="15"/><path d="M295 80 L300 52 L305 80Z"/>
+            <rect x="118" y="168" width="196" height="37"/>
+            <path d="M194 168 L215 153 L236 168Z"/>
+            <rect x="203" y="141" width="24" height="13"/>
+            <path d="M203 141 C 203 124 210 116 215 113 C 220 116 227 124 227 141Z"/>
+          </g>
+          <g stroke="#e3c47e" stroke-width=".9"><path d="M215 113V104M160 93V87M128 66V60M300 52V46"/></g>
+          <g fill="#e3c47e"><circle cx="215" cy="102.5" r="1.6"/><circle cx="160" cy="85.5" r="1.3"/><circle cx="128" cy="58.5" r="1.3"/><circle cx="300" cy="44.5" r="1.3"/></g>
+          <g fill="#f3dca0" opacity=".55">
+            <rect x="128" y="180" width="4" height="10" rx="2"/><rect x="140" y="180" width="4" height="10" rx="2"/><rect x="152" y="180" width="4" height="10" rx="2"/><rect x="164" y="180" width="4" height="10" rx="2"/><rect x="176" y="180" width="4" height="10" rx="2"/>
+            <rect x="250" y="180" width="4" height="10" rx="2"/><rect x="262" y="180" width="4" height="10" rx="2"/><rect x="274" y="180" width="4" height="10" rx="2"/><rect x="286" y="180" width="4" height="10" rx="2"/><rect x="298" y="180" width="4" height="10" rx="2"/>
+            <path d="M209 205 V184 Q215 176 221 184 V205Z"/>
+            <rect x="207" y="145" width="3" height="6" rx="1.5"/><rect x="213.5" y="145" width="3" height="6" rx="1.5"/><rect x="220" y="145" width="3" height="6" rx="1.5"/>
+          </g>
+          <rect x="0" y="205" width="400" height="35" fill="#05120d"/>
+          <path d="M0 205.5H400" stroke="#c9a45c" stroke-opacity=".5" stroke-width=".8"/>
+          <use href="#jas" x="22" y="194" width="9" height="9"/><use href="#jas" x="34" y="196" width="7" height="7"/><use href="#jas" x="372" y="192" width="9" height="9"/>
+        </svg>
+
+        <!-- ISTANBUL -->
+        <svg class="city city-r" viewBox="0 0 400 240" preserveAspectRatio="xMidYMax meet">
+          <g class="gulls" fill="none" stroke="#e8dcc0" stroke-width=".9" stroke-linecap="round" opacity=".8">
+            <path d="M120 50q4-4 8 0q4-4 8 0"/><path d="M150 36q3-3 6 0q3-3 6 0"/><path d="M190 60q3-3 6 0q3-3 6 0"/>
+          </g>
+          <path d="M150 205 C 200 192 240 186 290 184 C 340 182 372 184 400 187 L400 205Z" fill="#081d16"/>
+          <g fill="url(#gCity)" stroke="#c9a45c" stroke-opacity=".6" stroke-width=".7">
+            <rect x="43.5" y="112" width="5" height="93"/><path d="M43 112L46 92L49 112Z"/><rect x="42" y="130" width="8" height="2.5"/>
+            <rect x="59.5" y="118" width="5" height="87"/><path d="M59 118L62 100L65 118Z"/><rect x="58" y="136" width="8" height="2.5"/>
+            <rect x="155.5" y="118" width="5" height="87"/><path d="M155 118L158 100L161 118Z"/><rect x="154" y="136" width="8" height="2.5"/>
+            <rect x="171.5" y="112" width="5" height="93"/><path d="M171 112L174 92L177 112Z"/><rect x="170" y="130" width="8" height="2.5"/>
+            <rect x="68" y="160" width="10" height="45"/><rect x="142" y="160" width="10" height="45"/>
+            <rect x="72" y="170" width="76" height="35"/>
+            <path d="M74 170 C 74 158 80 152 89 152 L89 170Z"/><path d="M146 170 C 146 158 140 152 131 152 L131 170Z"/>
+            <rect x="88" y="145" width="44" height="12"/>
+            <path d="M86 146 C 88 128 100 121 110 121 C 120 121 132 128 134 146Z"/>
+            <rect x="223.5" y="96" width="5" height="90"/><path d="M223 96L226 78L229 96Z"/><rect x="222" y="112" width="8" height="2.2"/><rect x="222" y="134" width="8" height="2.2"/>
+            <rect x="239.5" y="74" width="5" height="112"/><path d="M239 74L242 54L245 74Z"/><rect x="238" y="90" width="8" height="2.2"/><rect x="238" y="112" width="8" height="2.2"/><rect x="238" y="134" width="8" height="2.2"/>
+            <rect x="355.5" y="74" width="5" height="112"/><path d="M355 74L358 54L361 74Z"/><rect x="354" y="90" width="8" height="2.2"/><rect x="354" y="112" width="8" height="2.2"/><rect x="354" y="134" width="8" height="2.2"/>
+            <rect x="371.5" y="96" width="5" height="90"/><path d="M371 96L374 78L377 96Z"/><rect x="370" y="112" width="8" height="2.2"/><rect x="370" y="134" width="8" height="2.2"/>
+            <rect x="250" y="150" width="100" height="35"/>
+            <path d="M252 150 C 252 141 257 137 262 137 C 267 137 272 141 272 150Z"/><path d="M328 150 C 328 141 333 137 338 137 C 343 137 348 141 348 150Z"/>
+            <path d="M262 150 C 262 136 270 129 281 129 L281 150Z"/><path d="M338 150 C 338 136 330 129 319 129 L319 150Z"/>
+            <rect x="275" y="113" width="4" height="9"/><rect x="321" y="113" width="4" height="9"/>
+            <rect x="280" y="120" width="40" height="11"/>
+            <path d="M278 121 C 278 97 290 87 300 87 C 310 87 322 97 322 121Z"/>
+            <path d="M0 205 L0 194 L14 194 L14 188 L30 188 L30 196 L38 196 L38 205Z"/>
+            <path d="M184 205 L184 196 L198 196 L198 190 L214 190 L214 205Z"/>
+          </g>
+          <g stroke="#e3c47e" stroke-width=".9"><path d="M110 121V112M300 87V77"/></g>
+          <g fill="#e3c47e"><circle cx="110" cy="110.5" r="1.5"/><circle cx="300" cy="75.5" r="1.6"/></g>
+          <g fill="#f3dca0" opacity=".55">
+            <rect x="93" y="148" width="3" height="6" rx="1.5"/><rect x="101" y="148" width="3" height="6" rx="1.5"/><rect x="109" y="148" width="3" height="6" rx="1.5"/><rect x="117" y="148" width="3" height="6" rx="1.5"/><rect x="125" y="148" width="3" height="6" rx="1.5"/>
+            <rect x="285" y="123" width="3" height="6" rx="1.5"/><rect x="293" y="123" width="3" height="6" rx="1.5"/><rect x="301" y="123" width="3" height="6" rx="1.5"/><rect x="309" y="123" width="3" height="6" rx="1.5"/>
+            <rect x="260" y="160" width="4" height="9" rx="2"/><rect x="272" y="160" width="4" height="9" rx="2"/><rect x="324" y="160" width="4" height="9" rx="2"/><rect x="336" y="160" width="4" height="9" rx="2"/><path d="M295 185V170Q300 164 305 170V185Z"/>
+          </g>
+          <rect x="0" y="205" width="400" height="35" fill="url(#gSea)"/>
+          <path d="M0 205.5H400" stroke="#c9a45c" stroke-opacity=".5" stroke-width=".8"/>
+          <g stroke="#f3dca0" stroke-opacity=".25" stroke-width="1.2"><path d="M110 210v6M110 220v4M300 210v8M300 222v5M46 211v5M242 210v6M358 210v6M174 211v5"/></g>
+          <g class="waves" fill="none" stroke="#c9a45c" stroke-opacity=".35" stroke-width=".7">
+            <path d="M-40 216q10-3 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0"/>
+          </g>
+          <g class="waves w2" fill="none" stroke="#c9a45c" stroke-opacity=".22" stroke-width=".7">
+            <path d="M-30 229q10-3 20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0t20 0"/>
+          </g>
+          <g class="ferry"><g transform="translate(160 219)">
+            <path d="M-14 0H14L11 5H-11Z" fill="#0a241c" stroke="#c9a45c" stroke-opacity=".7" stroke-width=".6"/>
+            <rect x="-9" y="-4" width="15" height="4" fill="#0a241c" stroke="#c9a45c" stroke-opacity=".6" stroke-width=".5"/>
+            <rect x="-2" y="-8" width="2.4" height="4" fill="#c9a45c"/>
+            <g fill="#f3dca0" opacity=".7"><rect x="-7" y="-3" width="1.6" height="1.6"/><rect x="-3.5" y="-3" width="1.6" height="1.6"/><rect x="0" y="-3" width="1.6" height="1.6"/><rect x="3.5" y="-3" width="1.6" height="1.6"/></g>
+          </g></g>
+        </svg>
+
+        <svg class="flight" viewBox="0 0 800 240">
+          <path id="flightPath" d="M215 104 C 300 4, 560 -6, 700 76" fill="none" stroke="#efd99d" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="1 1" stroke-dashoffset="1" pathLength="1" opacity=".85"/>
+          <circle id="arrive" cx="700" cy="78" r="14" fill="url(#gLamp)" opacity="0"/>
+          <g id="flyer"><circle r="12" fill="url(#gLamp)" opacity=".6"/><use href="#jas" x="-9" y="-9" width="18" height="18"/></g>
+        </svg>
+      </div>
+
+      <div class="city-labels" dir="ltr"><span>Şam <b lang="ar">دمشق</b></span><span>İstanbul <b lang="ar">إسطنبول</b></span></div>
+      <p class="city-text" data-i18n="citiesText">Yasemin Şehri'nden yola çıkan bir sevgi, iki kıtanın buluştuğu şehirde ömürlük yuvasını kuruyor.</p>
+    </div>
+  </section>
+
+  <!-- ===================== 7. BISMILLAH & VERSES (AT THE END) ===================== -->
+  <section class="section" id="verses">
+    <p class="bismillah gold-text reveal" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+    <svg class="divider reveal" viewBox="0 0 240 24" aria-hidden="true"><path d="M8 12H94M146 12H232" stroke="#c9a45c" stroke-width=".8"/><path d="M96 12l4-4l4 4l-4 4ZM136 12l4-4l4 4l-4 4Z" fill="#c9a45c"/><use href="#jas" x="108" y="0" width="24" height="24"/></svg>
+    <div id="quotes"></div>
+  </section>
+
+  <!-- ===================== 8. TAKI NOTE & CLOSING ===================== -->
+  <section class="section" id="closing">
+    <div class="taki-note reveal">
+      <p class="kicker" data-i18n="takiLabel">Bilgilendirme</p>
+      <p data-i18n="takiNote">Nikahımızda takı töreni yapılmayacaktır. Değerli varlığınız ve dualarınız bizim için en kıymetli hediyedir.</p>
+    </div>
+
+    <svg class="closing-sprig reveal" viewBox="0 0 150 130" aria-hidden="true">
+      <g class="sway">
+        <path d="M75 128 C 74 100 70 80 60 58 M73 96 C 84 80 96 70 108 62 M66 74 C 56 64 44 58 32 56" stroke="#3f7d5b" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        <g fill="#2f7a55">
+          <path d="M74 110c-8-2-12-8-12-14c8 2 12 8 12 14Z"/><path d="M76 104c8-2 12-8 12-14c-8 2-12 8-12 14Z"/>
+          <path d="M90 74c2-8 9-11 15-10c-2 8-9 11-15 10Z"/><path d="M48 62c-4-7-2-14 3-17c4 7 2 14-3 17Z"/>
+        </g>
+        <use href="#jas" x="44" y="34" width="32" height="32"/><use href="#jas" x="98" y="46" width="24" height="24"/>
+        <use href="#jas" x="18" y="44" width="22" height="22"/><use href="#bud" x="64" y="20" width="9" height="13"/><use href="#bud" x="112" y="38" width="8" height="11"/>
+      </g>
+    </svg>
+    <p class="kicker reveal" data-i18n="closingKicker">Teşekkürler</p>
+    <p class="lead reveal" style="color:var(--text)" data-i18n="closingThanks"></p>
+    <p class="prayer gold-text reveal" data-i18n="closingPrayer">Dualarınızla…</p>
+    <p class="dua reveal" lang="ar" dir="rtl">بَارَكَ اللَّهُ لَكُمَا، وَبَارَكَ عَلَيْكُمَا، وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
+    <p class="dua-meaning reveal" data-i18n="duaMeaning"></p>
+    <div class="gold-line reveal"></div>
+    <p class="signature reveal"><span id="sigLatin" dir="ltr">Samer Allaham &amp; Bayan Alnashoukati</span><small lang="ar" dir="rtl" id="sigAr">سامر اللحام وبيان النشوقاتي</small></p>
+  </section>
+</main>
+<footer data-i18n="footer">29 · 11 · 2026 · İstanbul</footer>
+
+<!-- RSVP sheet -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-bg" data-close></div>
+  <form class="sheet-card" id="rsvpForm" novalidate>
+    <h3 id="sheetTitle">—</h3>
+    <label class="field"><span data-i18n="formName">Ad Soyad</span>
+      <input type="text" id="fName" autocomplete="name" maxlength="80" data-i18n-ph="formNamePh">
+    </label>
+    <div class="field" id="countField"><span data-i18n="formCount">Kişi sayısı</span>
+      <div class="stepper" dir="ltr">
+        <button type="button" id="cMinus" aria-label="-">−</button>
+        <output id="cVal">1</output>
+        <button type="button" id="cPlus" aria-label="+">+</button>
+      </div>
+    </div>
+    <label class="field"><span data-i18n="formNote">Notunuz</span>
+      <textarea id="fNote" rows="2" maxlength="300" data-i18n-ph="formNotePh"></textarea>
+    </label>
+    <p class="form-err" id="fErr" role="alert"></p>
+    <button class="btn" type="submit">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+      <span data-i18n="formSend">WhatsApp ile gönder</span>
+    </button>
+    <button type="button" class="btn-cancel" data-close data-i18n="formCancel">Vazgeç</button>
+  </form>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const RM = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+  const html = document.documentElement;
+  const AR_DIGITS = "٠١٢٣٤٥٦٧٨٩";
+  const toAr = s => String(s).replace(/\d/g, d => AR_DIGITS[d]);
+
+  /* ---------------- language ---------------- */
+  let lang;
+  try { lang = localStorage.getItem("inv-lang"); } catch (e) {}
+  if (lang !== "tr" && lang !== "ar") {
+    lang = (navigator.language || "").toLowerCase().startsWith("ar") ? "ar" : (CONFIG.defaultLang || "tr");
+  }
+  const other = () => (lang === "tr" ? "ar" : "tr");
+  const T = (k, l = lang) => {
+    const v = CONFIG.text[l] && CONFIG.text[l][k];
+    return v !== undefined ? v : (CONFIG.text.tr[k] || "");
+  };
+  const fill = (str, l = lang, extra = {}) => {
+    const c = CONFIG.couple[l];
+    const vars = Object.assign({ bride: c.bride, groom: c.groom, couple: c.together }, extra);
+    return String(str).replace(/\{(\w+)\}/g, (_, k) => (vars[k] !== undefined ? vars[k] : ""));
+  };
+
+  function applyLang(l) {
+    lang = l;
+    try { localStorage.setItem("inv-lang", l); } catch (e) {}
+    html.lang = l;
+    html.dir = l === "ar" ? "rtl" : "ltr";
+    document.title = fill(T("pageTitle"));
+    $$("[data-i18n]").forEach(el => { el.textContent = fill(T(el.dataset.i18n)); });
+    $$("[data-i18n-alt]").forEach(el => {
+      const o = other();
+      el.textContent = fill(T(el.dataset.i18nAlt, o), o);
+      el.lang = o; el.dir = o === "ar" ? "rtl" : "ltr";
+    });
+    $$("[data-i18n-ph]").forEach(el => { el.placeholder = fill(T(el.dataset.i18nPh)); });
+    $$("[data-lang-btn]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.langBtn === l)));
+    $$(".dua-meaning").forEach(el => { el.style.display = T("duaMeaning") ? "" : "none"; });
+    const fab = $("#langFab");
+    fab.innerHTML = l === "tr" ? '<span class="ar" lang="ar">العربية</span>' : "<span>Türkçe</span>";
+    updateMusicLabel();
+    renderQuotes();
+    tick(true);
+    if (sheetMode) setSheetTitle();
+  }
+
+  /* ---------------- names ---------------- */
+  function buildNames() {
+    const tr = CONFIG.couple.tr, ar = CONFIG.couple.ar;
+    const h1 = $("#namesLatin");
+    h1.setAttribute("aria-label", tr.groom + " & " + tr.bride);
+    let i = 0;
+    const addChars = (parent, text) => {
+      [...text].forEach(ch => {
+        const s = document.createElement("span");
+        s.className = "ch"; s.textContent = ch; s.style.setProperty("--i", i++);
+        s.setAttribute("aria-hidden", "true");
+        parent.appendChild(s);
+      });
+    };
+    const makeLine = (first, last) => {
+      const line = document.createElement("span");
+      line.className = "name-line";
+      const f = document.createElement("span");
+      addChars(f, first);
+      line.appendChild(f);
+      if (last) {
+        const l = document.createElement("span");
+        l.className = "surname";
+        addChars(l, last);
+        line.appendChild(l);
+      }
+      return line;
+    };
+    const frag = document.createDocumentFragment();
+    frag.appendChild(makeLine(tr.groomFirst || tr.groom, tr.groomLast || ""));
+    const amp = document.createElement("span");
+    amp.className = "amp"; amp.textContent = "&"; amp.style.setProperty("--i", i++); amp.setAttribute("aria-hidden", "true");
+    frag.appendChild(amp);
+    frag.appendChild(makeLine(tr.brideFirst || tr.bride, tr.brideLast || ""));
+    h1.appendChild(frag);
+
+    const arTxt = ar.together || (ar.groom + " و" + ar.bride);
+    ["#namesAr", "#cardAr", "#sigAr"].forEach(s => { $(s).textContent = arTxt; });
+    $("#cardBride").textContent = tr.bride;
+    $("#cardGroom").textContent = tr.groom;
+    $("#sigLatin").textContent = tr.groom + " & " + tr.bride;
+  }
+
+  /* ---------------- quotes ---------------- */
+  const sepSVG = '<svg class="q-sep" viewBox="0 0 120 12" aria-hidden="true"><path d="M4 6H50M70 6H116" stroke="#c9a45c" stroke-width=".7"/><path d="M55 6l5-4l5 4l-5 4Z" fill="#c9a45c"/></svg>';
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function renderQuotes() {
+    const box = $("#quotes");
+    const out = CONFIG.quotes.map((q, idx) => {
+      const sep = idx ? sepSVG : "";
+      if (q.type === "ayah") {
+        const ref = lang === "ar" ? q.refAr : q.refTr;
+        return sep + '<figure class="quote ayah reveal in">' +
+          '<p class="q-ar" lang="ar" dir="rtl">﴿ ' + esc(q.ar) + ' ﴾</p>' +
+          '<p class="q-tr ' + (lang === "ar" ? "q-small" : "") + '" lang="tr" dir="ltr">“' + esc(q.tr) + '”</p>' +
+          (ref ? '<figcaption class="q-ref">' + esc(ref) + "</figcaption>" : "") + "</figure>";
+      }
+      const prim = lang === "ar"
+        ? '<p class="q-ar q-primary" lang="ar" dir="rtl">' + esc(q.ar) + '</p><p class="q-tr q-small" lang="tr" dir="ltr">' + esc(q.tr) + "</p>"
+        : '<p class="q-tr q-primary" lang="tr" dir="ltr">' + esc(q.tr) + '</p><p class="q-ar q-small" lang="ar" dir="rtl">' + esc(q.ar) + "</p>";
+      return sep + '<figure class="quote saying reveal in">' + prim + "</figure>";
+    }).join("");
+    const first = !box.dataset.rendered;
+    box.innerHTML = out;
+    box.dataset.rendered = "1";
+    if (first && !RM) $$(".quote", box).forEach(el => { el.classList.remove("in"); io && io.observe(el); });
+  }
+
+  /* ---------------- reveal on scroll ---------------- */
+  let io = null;
+  if ("IntersectionObserver" in window && !RM) {
+    io = new IntersectionObserver(entries => entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    }), { rootMargin: "0px 0px -8% 0px", threshold: .12 });
+    $$(".reveal").forEach(el => io.observe(el));
+  } else {
+    $$(".reveal").forEach(el => el.classList.add("in"));
+  }
+
+  /* ---------------- countdown ---------------- */
+  const target = new Date(CONFIG.dateISO).getTime();
+  const cdEls = { d: $("#cdD"), h: $("#cdH"), m: $("#cdM"), s: $("#cdS") };
+  const navCdText = $("#navCdText");
+  const last = {};
+  function tick(force) {
+    let diff = target - Date.now();
+    const wrap = $("#countdown");
+    if (diff <= 0) {
+      wrap.classList.add("done");
+      if (navCdText) navCdText.textContent = T("cdDone");
+      return;
+    }
+    wrap.classList.remove("done");
+    const d = Math.floor(diff / 864e5); diff -= d * 864e5;
+    const h = Math.floor(diff / 36e5); diff -= h * 36e5;
+    const m = Math.floor(diff / 6e4); diff -= m * 6e4;
+    const s = Math.floor(diff / 1e3);
+    const vals = { d, h, m, s };
+    const fmt = {};
+    for (const k in vals) {
+      let v = String(vals[k]).padStart(2, "0");
+      if (lang === "ar") v = toAr(v);
+      fmt[k] = v;
+      if (force || last[k] !== v) {
+        cdEls[k].textContent = v;
+        if (!force && !RM) { cdEls[k].classList.remove("tick"); void cdEls[k].offsetWidth; cdEls[k].classList.add("tick"); }
+        last[k] = v;
+      }
+    }
+    if (navCdText) {
+      navCdText.innerHTML =
+        fmt.d + "<small>" + esc(T("cdShortD")) + "</small>" +
+        '<span class="cd-sep">·</span>' +
+        fmt.h + "<small>" + esc(T("cdShortH")) + "</small>" +
+        '<span class="cd-sep">:</span>' +
+        fmt.m + "<small>" + esc(T("cdShortM")) + "</small>" +
+        '<span class="cd-sep">:</span>' +
+        fmt.s + "<small>" + esc(T("cdShortS")) + "</small>";
+    }
+  }
+  setInterval(() => tick(false), 1000);
+
+  /* ---------------- links: maps & calendar ---------------- */
+  const q = encodeURIComponent(CONFIG.venue.mapsQuery);
+  const dirUrl = "https://www.google.com/maps/dir/?api=1&destination=" + q;
+  $("#dirBtn").href = dirUrl;
+  $("#navDir").href = dirUrl;
+  $("#mapLink").href = "https://www.google.com/maps/search/?api=1&query=" + q;
+
+  const start = new Date(CONFIG.dateISO);
+  const end = new Date(start.getTime() + (CONFIG.durationMinutes || 60) * 6e4);
+  const icsDate = d => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+  const icsEsc = s => String(s).replace(/\\/g, "\\\\").replace(/\n/g, "\\n").replace(/,/g, "\\,").replace(/;/g, "\\;");
+  function buildICS() {
+    const lines = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Bayan Samer//Davetiye//TR", "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+      "BEGIN:VEVENT",
+      "UID:" + icsDate(start) + "-nikah@davetiye",
+      "DTSTAMP:" + icsDate(new Date()),
+      "DTSTART:" + icsDate(start),
+      "DTEND:" + icsDate(end),
+      "SUMMARY:" + icsEsc(CONFIG.calendar.title),
+      "LOCATION:" + icsEsc(CONFIG.venue.mapsQuery),
+      "DESCRIPTION:" + icsEsc(T("calDescription", "tr") + "\n" + T("calDescription", "ar")),
+      "BEGIN:VALARM", "TRIGGER:-PT3H", "ACTION:DISPLAY", "DESCRIPTION:" + icsEsc(CONFIG.calendar.title), "END:VALARM",
+      "END:VEVENT", "END:VCALENDAR"
+    ];
+    return lines.join("\r\n");
+  }
+  $("#icsBtn").addEventListener("click", () => {
+    const ics = buildICS();
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    if (isIOS) { window.location.href = "data:text/calendar;charset=utf-8," + encodeURIComponent(ics); return; }
+    const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url; a.download = CONFIG.calendar.fileName || "nikah.ics";
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 4000);
+  });
+  $("#gcalLink").href = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+    "&text=" + encodeURIComponent(CONFIG.calendar.title) +
+    "&dates=" + icsDate(start) + "/" + icsDate(end) +
+    "&location=" + q +
+    "&details=" + encodeURIComponent(T("calDescription", "tr"));
+
+  /* ---------------- RSVP ---------------- */
+  const sheet = $("#sheet");
+  let sheetMode = null, count = 1, lastFocus = null;
+  function setSheetTitle() { $("#sheetTitle").textContent = fill(T(sheetMode === "yes" ? "formTitleYes" : "formTitleNo")); }
+  function openSheet(mode) {
+    sheetMode = mode; lastFocus = document.activeElement;
+    setSheetTitle();
+    $("#countField").style.display = mode === "yes" ? "" : "none";
+    $("#fErr").textContent = "";
+    sheet.hidden = false;
+    document.body.style.overflow = "hidden";
+    setTimeout(() => $("#fName").focus({ preventScroll: true }), 350);
+  }
+  function closeSheet() { sheet.hidden = true; sheetMode = null; document.body.style.overflow = ""; lastFocus && lastFocus.focus && lastFocus.focus({ preventScroll: true }); }
+  $$("[data-rsvp]").forEach(b => b.addEventListener("click", () => openSheet(b.dataset.rsvp)));
+  $$("[data-close]", sheet).forEach(b => b.addEventListener("click", closeSheet));
+  document.addEventListener("keydown", e => { if (e.key === "Escape" && !sheet.hidden) closeSheet(); });
+  const setCount = n => { count = clamp(n, 1, 20); $("#cVal").textContent = count; };
+  $("#cMinus").addEventListener("click", () => setCount(count - 1));
+  $("#cPlus").addEventListener("click", () => setCount(count + 1));
+  $("#rsvpForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const name = $("#fName").value.trim();
+    const note = $("#fNote").value.trim();
+    if (name.length < 2) { $("#fErr").textContent = T("formErr"); $("#fName").focus(); return; }
+    let tpl = T(sheetMode === "yes" ? "waYes" : "waNo");
+    tpl = tpl.split("\n").filter(line => note || line.indexOf("{note}") === -1).join("\n");
+    const msg = fill(tpl, lang, { name, note, count: String(count) });
+    const raw = String(CONFIG.whatsappNumber || "");
+    const num = raw.replace(/\D/g, "");
+    const valid = num.length >= 10 && !/x/i.test(raw);
+    const url = (valid ? "https://wa.me/" + num : "https://wa.me/") + "?text=" + encodeURIComponent(msg);
+    window.location.href = url;
+  });
+
+  /* ---------------- music ---------------- */
+  const Music = (() => {
+    let audio = null, ac = null, master = null, bus = null, timer = null, nextT = 0, idx = 4, on = false;
+    const scale = [293.66, 311.13, 369.99, 392.0, 440.0, 466.16, 523.25, 587.33, 622.25, 739.99];
+    function init() {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return false;
+      ac = new AC();
+      master = ac.createGain(); master.gain.value = 0; master.connect(ac.destination);
+      const delay = ac.createDelay(1.5); delay.delayTime.value = .42;
+      const fb = ac.createGain(); fb.gain.value = .36;
+      const dlp = ac.createBiquadFilter(); dlp.type = "lowpass"; dlp.frequency.value = 1700;
+      delay.connect(dlp); dlp.connect(fb); fb.connect(delay); dlp.connect(master);
+      bus = ac.createGain(); bus.connect(master); bus.connect(delay);
+      const droneLP = ac.createBiquadFilter(); droneLP.type = "lowpass"; droneLP.frequency.value = 520;
+      const dg = ac.createGain(); dg.gain.value = .05; droneLP.connect(dg); dg.connect(master);
+      [[73.42, "triangle", .8], [146.83, "sine", 1], [220, "sine", .45]].forEach(([f, type, v]) => {
+        const o = ac.createOscillator(); o.type = type; o.frequency.value = f;
+        const g = ac.createGain(); g.gain.value = v; o.connect(g); g.connect(droneLP); o.start();
+      });
+      const lfo = ac.createOscillator(); lfo.frequency.value = .06;
+      const lg = ac.createGain(); lg.gain.value = .02; lfo.connect(lg); lg.connect(dg.gain); lfo.start();
+      return true;
+    }
+    function pluck(f, t, vel) {
+      const o = ac.createOscillator(), o2 = ac.createOscillator(), g = ac.createGain(), g2 = ac.createGain(), lp = ac.createBiquadFilter();
+      o.type = "triangle"; o2.type = "sawtooth"; o.frequency.value = f; o2.frequency.value = f * 1.003; g2.gain.value = .22;
+      lp.type = "lowpass"; lp.Q.value = 1.5;
+      lp.frequency.setValueAtTime(3400, t); lp.frequency.exponentialRampToValueAtTime(480, t + 1.1);
+      g.gain.setValueAtTime(.0001, t); g.gain.exponentialRampToValueAtTime(vel, t + .006); g.gain.exponentialRampToValueAtTime(.0001, t + 1.7);
+      o.connect(g); o2.connect(g2); g2.connect(g); g.connect(lp); lp.connect(bus);
+      o.start(t); o2.start(t); o.stop(t + 1.8); o2.stop(t + 1.8);
+    }
+    function schedule() {
+      while (nextT < ac.currentTime + .7) {
+        const r = Math.random();
+        idx = clamp(idx + (r < .36 ? -1 : r < .72 ? 1 : r < .83 ? -2 : r < .93 ? 2 : 0), 0, scale.length - 1);
+        if (Math.random() < .08) idx = 0;
+        const vel = .09 + Math.random() * .06;
+        pluck(scale[idx], nextT, vel);
+        if (Math.random() < .16) { pluck(scale[idx], nextT + .1, vel * .6); pluck(scale[idx], nextT + .2, vel * .45); }
+        if (Math.random() < .14) pluck(scale[idx] / 2, nextT, vel * .7);
+        let dur = [.5, .75, .75, 1, 1.5][Math.floor(Math.random() * 5)];
+        if (Math.random() < .1) dur += 1.4;
+        nextT += dur;
+      }
+    }
+    async function play() {
+      if (CONFIG.music.url) {
+        if (!audio) { audio = new Audio(CONFIG.music.url); audio.loop = true; audio.volume = .65; }
+        try { await audio.play(); on = true; } catch (e) { on = false; }
+        return on;
+      }
+      if (!ac && !init()) return false;
+      if (ac.state === "suspended") { try { await ac.resume(); } catch (e) {} }
+      master.gain.cancelScheduledValues(ac.currentTime);
+      master.gain.setTargetAtTime(.55, ac.currentTime, .9);
+      nextT = ac.currentTime + .25;
+      clearInterval(timer); timer = setInterval(schedule, 160); schedule();
+      on = true; return true;
+    }
+    function stop() {
+      on = false;
+      if (audio) { audio.pause(); return; }
+      if (!ac) return;
+      master.gain.cancelScheduledValues(ac.currentTime);
+      master.gain.setTargetAtTime(0, ac.currentTime, .25);
+      clearInterval(timer);
+      setTimeout(() => { if (!on) ac.suspend(); }, 1300);
+    }
+    document.addEventListener("visibilitychange", () => {
+      if (!on) return;
+      if (document.hidden) { audio ? audio.pause() : ac && ac.suspend(); clearInterval(timer); }
+      else { audio ? audio.play().catch(() => {}) : (ac && ac.resume().then(() => { nextT = ac.currentTime + .2; timer = setInterval(schedule, 160); })); }
+    });
+    return { play, stop, get on() { return on; } };
+  })();
+  const musicBtn = $("#musicBtn");
+  function updateMusicLabel() {
+    musicBtn.classList.toggle("on", Music.on);
+    musicBtn.setAttribute("aria-pressed", String(Music.on));
+    musicBtn.setAttribute("aria-label", T(Music.on ? "musicOff" : "musicOn"));
+  }
+  musicBtn.addEventListener("click", async () => {
+    if (Music.on) Music.stop(); else await Music.play();
+    updateMusicLabel();
+  });
+
+  /* ---------------- falling jasmine (canvas) ---------------- */
+  function startPetals() {
+    if (RM) return;
+    const c = $("#petals"), ctx = c.getContext("2d");
+    if (!ctx) return;
+    let W = 0, H = 0, dpr = Math.min(1.5, window.devicePixelRatio || 1);
+    function resize() { W = innerWidth; H = innerHeight; c.width = Math.round(W * dpr); c.height = Math.round(H * dpr); }
+    resize();
+    addEventListener("resize", resize, { passive: true });
+
+    const mk = (s, draw) => { const cv = document.createElement("canvas"); cv.width = cv.height = s; const x = cv.getContext("2d"); x.translate(s / 2, s / 2); draw(x); return cv; };
+    const flower = mk(64, x => {
+      for (let i = 0; i < 5; i++) {
+        x.save(); x.rotate(i * Math.PI * 2 / 5 + .3);
+        const g = x.createLinearGradient(0, 0, 0, -26); g.addColorStop(0, "#f1e7cf"); g.addColorStop(1, "#ffffff");
+        x.fillStyle = g; x.beginPath(); x.ellipse(-2, -13, 5.5, 13, .22, 0, Math.PI * 2); x.fill();
+        x.restore();
+      }
+      x.fillStyle = "#e6cc79"; x.beginPath(); x.arc(0, 0, 3.4, 0, Math.PI * 2); x.fill();
+    });
+    const petal = mk(40, x => {
+      const g = x.createLinearGradient(0, -14, 0, 14); g.addColorStop(0, "#ffffff"); g.addColorStop(1, "#ece0c4");
+      x.fillStyle = g; x.beginPath(); x.ellipse(0, 0, 6, 15, 0, 0, Math.PI * 2); x.fill();
+    });
+    const leaf = mk(40, x => {
+      x.fillStyle = "#2f7a55"; x.beginPath(); x.ellipse(0, 0, 6, 15, 0, 0, Math.PI * 2); x.fill();
+      x.strokeStyle = "rgba(200,230,200,.35)"; x.lineWidth = 1; x.beginPath(); x.moveTo(0, -13); x.lineTo(0, 13); x.stroke();
+    });
+    const N = W < 600 ? 15 : 26;
+    const spawn = init => {
+      const r = Math.random();
+      const type = r < .45 ? flower : r < .85 ? petal : leaf;
+      const base = type === flower ? 26 : 16;
+      return {
+        img: type, size: base * (.6 + Math.random() * .7),
+        x: Math.random() * W, y: init ? Math.random() * H : -40 - Math.random() * 80,
+        vy: 16 + Math.random() * 26, amp: 14 + Math.random() * 30, fr: .25 + Math.random() * .6, ph: Math.random() * 6.28,
+        rot: Math.random() * 6.28, vr: (Math.random() - .5) * 1.2, flip: Math.random() * 6.28, vf: .6 + Math.random() * 1.4,
+        a: .55 + Math.random() * .4
+      };
+    };
+    const parts = Array.from({ length: N }, () => spawn(true));
+    let lastT = performance.now(), running = true, t = 0;
+    function frame(now) {
+      if (!running) return;
+      const dt = Math.min(.05, (now - lastT) / 1000); lastT = now; t += dt;
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, c.width, c.height);
+      for (const p of parts) {
+        p.y += p.vy * dt; p.rot += p.vr * dt; p.flip += p.vf * dt;
+        const x = p.x + Math.sin(t * p.fr + p.ph) * p.amp;
+        if (p.y > H + 40) Object.assign(p, spawn(false));
+        const s = p.size / p.img.width;
+        const sx = s * (.35 + .65 * Math.abs(Math.cos(p.flip))), sy = s;
+        const cs = Math.cos(p.rot), sn = Math.sin(p.rot);
+        ctx.globalAlpha = p.a;
+        ctx.setTransform(dpr * cs * sx, dpr * sn * sx, -dpr * sn * sy, dpr * cs * sy, dpr * x, dpr * p.y);
+        ctx.drawImage(p.img, -p.img.width / 2, -p.img.height / 2);
+      }
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+    document.addEventListener("visibilitychange", () => {
+      running = !document.hidden;
+      if (running) { lastT = performance.now(); requestAnimationFrame(frame); }
+    });
+  }
+
+  /* ---------------- two cities scroll scene ---------------- */
+  function initCities() {
+    const sec = $("#cities"), sticky = $("#citiesSticky"), path = $("#flightPath"), flyer = $("#flyer"), arrive = $("#arrive");
+    if (RM) {
+      sec.classList.add("static");
+      ["--m", "--t", "--q", "--q2"].forEach(v => sticky.style.setProperty(v, 1));
+      path.setAttribute("stroke-dashoffset", 0);
+      const p = path.getPointAtLength(path.getTotalLength());
+      flyer.setAttribute("transform", "translate(" + p.x + " " + p.y + ")");
+      return;
+    }
+    const L = path.getTotalLength();
+    const ease = x => x < .5 ? 2 * x * x : 1 - Math.pow(-2 * x + 2, 2) / 2;
+    let ticking = false, active = false;
+    function update() {
+      ticking = false;
+      const r = sec.getBoundingClientRect();
+      const total = r.height - innerHeight;
+      const p = total > 0 ? clamp(-r.top / total) : 1;
+      const m = ease(clamp(p / .55));
+      const tt = clamp((p - .3) / .3);
+      const qq = clamp((p - .55) / .38);
+      sticky.style.setProperty("--m", m.toFixed(4));
+      sticky.style.setProperty("--t", tt.toFixed(3));
+      sticky.style.setProperty("--q", qq.toFixed(3));
+      sticky.style.setProperty("--q2", clamp((p - .8) / .2).toFixed(3));
+      const qe = ease(qq);
+      path.setAttribute("stroke-dashoffset", (1 - qe).toFixed(4));
+      const pt = path.getPointAtLength(L * qe);
+      const sc = .8 + Math.sin(qe * Math.PI) * .5;
+      flyer.setAttribute("transform", "translate(" + pt.x.toFixed(1) + " " + pt.y.toFixed(1) + ") rotate(" + (qe * 300).toFixed(0) + ") scale(" + sc.toFixed(3) + ")");
+      arrive.setAttribute("opacity", qq > .97 ? .9 : 0);
+      arrive.setAttribute("r", qq > .97 ? 26 : 10);
+    }
+    const onScroll = () => { if (active && !ticking) { ticking = true; requestAnimationFrame(update); } };
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(es => { active = es[0].isIntersecting; if (active) onScroll(); }, { rootMargin: "100px 0px" }).observe(sec);
+    } else active = true;
+    addEventListener("scroll", onScroll, { passive: true });
+    addEventListener("resize", onScroll, { passive: true });
+    update();
+  }
+
+  /* ---------------- walk-through door opening ---------------- */
+  const intro = $("#intro");
+  let opened = false;
+  function openInvite() {
+    if (opened) return; opened = true;
+    if (CONFIG.music.playOnOpen && !Music.on) Music.play().then(updateMusicLabel);
+    window.scrollTo(0, 0);
+    const T_WALK = RM ? 20 : 620;
+    const T_OPEN = RM ? 60 : 1850;
+    const T_DONE = RM ? 180 : 2550;
+
+    // 1) Swing doors open — the real invitation immediately becomes visible through the arch!
+    intro.classList.add("opening");
+    $("#hero").classList.add("play");
+
+    // 2) Walk forward through the open doorway as the invitation glides closer
+    setTimeout(() => {
+      intro.classList.add("walking");
+      document.body.classList.add("walking");
+      startPetals();
+    }, T_WALK);
+
+    // 3) Unlock scrolling and glide in top/bottom bars as you enter
+    setTimeout(() => {
+      document.body.classList.remove("locked", "walking");
+      document.body.classList.add("opened");
+    }, T_OPEN);
+
+    // 4) Cleanly remove the door overlay
+    setTimeout(() => { intro.classList.add("done"); }, T_DONE);
+    setTimeout(() => { intro.remove(); }, T_DONE + 900);
+  }
+  $("#openBtn").addEventListener("click", openInvite);
+  const doorScene = $("#doorScene");
+  if (doorScene) {
+    doorScene.addEventListener("click", openInvite);
+    doorScene.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openInvite(); } });
+  }
+  $$("[data-lang-btn]").forEach(b => b.addEventListener("click", () => applyLang(b.dataset.langBtn)));
+  $("#langFab").addEventListener("click", () => applyLang(other()));
+
+  /* ---------------- boot ---------------- */
+  buildNames();
+  applyLang(lang);
+  initCities();
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+})();
+</script>
+</body>
+</html>
